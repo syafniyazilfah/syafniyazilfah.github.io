@@ -1,9 +1,9 @@
 ### Site Settings ###
 title               : Syafniya Zilfah
 description         : >-
-                      I am Zilfah, a Bachelor of Statistics as an Data Analyst Intern at Qiscus, 
+                      I am Zilfah, a Bachelor of Statistics as Data Analyst Intern at Qiscus, 
                       
-                      a Data Enthusiast who also loves visualization :heart:
+                      a Data Enthusiast who also loves visualization :heart on fire:
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : syafniyazilfah/syafniyazilfah.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
