@@ -3,13 +3,13 @@
   color: success
 
 - name: Figma
-  percentage: 60
+  percentage: 50
   color: info
   
 - name: Adobe Illustrator
   percentage: 60
-  color: danger
-  
- - name: Clip Studio Paint
-   percentage: 50
-   color: primary
+  color: warning
+
+- name: Clip Studio Paint
+  percentage: 50
+  color: seccondary
