@@ -1,9 +1,9 @@
 ### Site Settings ###
-title               : Azka Radinka
+title               : Syafniya Zilfah
 description         : >-
-                      I am Azka, currently pursuing six-months machine learning course of study in Google Bangkit 2021
+                      I am Zilfah, currently pursuing six-months machine learning course of study in Google Bangkit 2021
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : radinka-data/radinka-data.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+repository          : syafniyazilfah/syafniyazilfah.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
 
 
@@ -21,17 +21,17 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : Azka Radinka
-  image             : https://i.postimg.cc/YCT1ZTFc/line-52538613190682-2.jpg
+  name              : Syafniya Zilfah
+  image             : https://i.postimg.cc/2SF2JgKD/Whats-App-Image-2023-01-17-at-21-15-52.jpg
 # behance           : your_username
 # dribbble          : your_username
-  email             : azkaradinka@gmail.com
+  email             : syafniyaaniesiy@gmail.com
 #  facebook          : your_username
-  github            : aradinka
+  github            : syafniyazilfah
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
-  linkedin          : aradinka
+  linkedin          : szilfah
 #  medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
