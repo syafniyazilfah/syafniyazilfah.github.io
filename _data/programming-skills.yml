@@ -4,7 +4,7 @@
 
 - name: Phyton
   percentage: 50
-  color: secondary
+  color: info
   
 - name: R
   percentage: 50
