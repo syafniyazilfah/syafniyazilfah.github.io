@@ -80,9 +80,9 @@ defaults:
       layout: "page"
   - scope:                                              # For Documentation Only
       path: ""                                          # For Documentation Only
-      type: "elements"                                  # For Documentation Only
+      type: "certificate"                                  # For Documentation Only
     values:                                             # For Documentation Only
-      layout: "element"                                 # For Documentation Only
+      layout: "certificate"                                 # For Documentation Only
   - scope:
       path: ""
       type: "posts"
