@@ -17,6 +17,18 @@ I'm currently a Data Analyst Intern at Qiscus which will be completed in April 2
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
 </div>
 
+## <span class="material-symbols-rounded">school</span> Education
+<div class="timeline-body bg-themed">
+    <div class="timeline-item">
+        <div class="content">
+          <h2>Telkom Insitute of Technology, Indonesia</h2>
+          <h6 class="date">2017 - 2021</h6>
+          <p>Bachelor of Statistics, Faculty of Science and Data Analytics, with a GPA of 3.44 out of 4.0</p>
+        </div>
+      </div>
+</div>
+
+## <span class="material-symbols-rounded">work</span> Working Experience
 <div class="row">
 {% include about/timeline.html %}
 </div>
