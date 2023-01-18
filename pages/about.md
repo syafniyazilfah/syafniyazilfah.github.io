@@ -21,8 +21,8 @@ I'm currently a Data Analyst Intern at Qiscus which will be completed in April 2
 <div class="timeline-body bg-themed">
     <div class="timeline-item">
         <div class="content">
-          <h2>Telkom Insitute of Technology, Indonesia</h2>
-          <h6 class="date">2017 - 2021</h6>
+          <h2>Sepuluh Nopember Institute of Technology, Indonesia</h2>
+          <h6 class="date">2018 - 2022</h6>
           <p>Bachelor of Statistics, Faculty of Science and Data Analytics, with a GPA of 3.44 out of 4.0</p>
         </div>
       </div>
