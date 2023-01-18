@@ -17,7 +17,7 @@ I'm currently a Data Analyst Intern at Qiscus which will be completed in April 2
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
 </div>
 
-## <span class="material-symbols-rounded">school</span> Education
+## Education
 <div class="timeline-body bg-themed">
     <div class="timeline-item">
         <div class="content">
@@ -28,7 +28,7 @@ I'm currently a Data Analyst Intern at Qiscus which will be completed in April 2
       </div>
 </div>
 
-## <span class="material-symbols-rounded">work</span> Working Experience
+## Working Experience
 <div class="row">
 {% include about/timeline.html %}
 </div>
