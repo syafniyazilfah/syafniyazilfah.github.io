@@ -1,5 +1,5 @@
 ---
-name: Infographics
+name: Infographics of Satria Data 2020 Competition
 tools: [Infographics]
 image: https://i.postimg.cc/JzRVpjX7/infografis-bayi-1-1.png
 description: Infographics using Clip Studio Paint feat Adobe Illustrator
