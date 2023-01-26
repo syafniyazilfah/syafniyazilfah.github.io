@@ -1,7 +1,7 @@
 ---
 name: Lanting
 tools: [YoLoV3, Machine Learning]
-image: https://i.postimg.cc/HLntR0nj/lanting.jpg
+image: https://i.postimg.cc/qq2xVnYK/lantingg.jpg
 
 description: Lanting is an application that prevent / reduce stunting cases in Indonesia by controlling the adequacy of nutritional needs for the body via application.
 ---
