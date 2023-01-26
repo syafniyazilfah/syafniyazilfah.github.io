@@ -6,7 +6,7 @@ image: https://i.postimg.cc/HLntR0nj/lanting.jpg
 description: Lanting is an application that prevent / reduce stunting cases in Indonesia by controlling the adequacy of nutritional needs for the body via application.
 ---
 
-# Overview
+### Overview
 
 ![](https://i.postimg.cc/HLntR0nj/lanting.jpg)
 
