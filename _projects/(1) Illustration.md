@@ -8,6 +8,6 @@ description: Illustration using Clip Studio Paint
 ![](https://i.postimg.cc/SxGPBDKL/ka-rafhi.png)
 
 
-### Deskripsi Karya
-Merupakan hasil digital drawing dengan menggunakan software Clip Studio Paint, dengan 100% gambaran.
-Ilustrasi ini dibuat pada tanggal 24 Januari 2023.
+### Description
+This is the result of a digital drawing using the Clip Studio Paint software, with 100% drawing.
+This illustration was created on January 24, 2023.
