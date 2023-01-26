@@ -36,5 +36,5 @@ This application uses image processing using the YoLoV3 model with 7 classes.
 
 
 #### Project Repo
-{% include elements/button.html link="https://github.com/muhzulfik/bangkit-capstone" text="Project Github Repo (Machine Learning + Cloud Computing" block=true %}
-{% include elements/button.html link="https://github.com/fhrii/lanting" text="Project Github Repo (Mobile Developer" block=true %}
+{% include elements/button.html link="https://github.com/muhzulfik/bangkit-capstone" text="Project Github Repo (Machine Learning + Cloud Computing)" block=true %}
+{% include elements/button.html link="https://github.com/fhrii/lanting" text="Project Github Repo (Mobile Developer)" block=true %}
