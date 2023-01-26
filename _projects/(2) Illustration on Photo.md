@@ -8,6 +8,6 @@ description: Illustration using Clip Studio Paint
 ![](https://i.postimg.cc/KzYhqCrg/Whats-App-Image-2022-09-23-at-15-42-47-2.png)
 
 
-### Deskripsi Karya
-Merupakan hasil digital drawing dengan menggunakan software Clip Studio Paint, dimana ilustrasi ini menggabungkan antara gambaran dengan foto.
-Ilustrasi ini dibuat pada bulan September 2022.
+### Description
+Is the result of a digital drawing using the Clip Studio Paint software, where this illustration combines images with photos.
+This illustration was created in September 2022.
