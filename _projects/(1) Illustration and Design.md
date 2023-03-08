@@ -9,7 +9,7 @@ description: Illustration using Clip Studio Paint also Adobe Illustrator
 ![](https://i.postimg.cc/SxGPBDKL/ka-rafhi.png)
 
 
-#### Description
+
 This is the result of a digital drawing using the Clip Studio Paint software, with 100% image.
 This illustration was created on January 24, 2023.
 
@@ -18,7 +18,7 @@ This illustration was created on January 24, 2023.
 ![](https://i.postimg.cc/KzYhqCrg/Whats-App-Image-2022-09-23-at-15-42-47-2.png)
 
 
-#### Description
+
 The result of a digital drawing using the Clip Studio Paint software, where this illustration combines images with photos.
 This illustration was created in September 2022.
 
@@ -39,7 +39,7 @@ This illustration was created in September 2022.
 
 ![](https://i.postimg.cc/hjg5Xy0v/2-bawah.jpg)
 
-#### Description
+
 Designing using Adobe Illustrator for Feeds Instagram of event PRS 2020 (Pekan Raya Statistika 2020).
 This design made on 2020.
 Apart from coming soon, here are some design feeds for the PRS 2020 Instagram where there are some that are not published on Instagram accounts due to the corona PRS 2020 being stopped.
@@ -48,7 +48,7 @@ Apart from coming soon, here are some design feeds for the PRS 2020 Instagram wh
 
 ![](https://i.postimg.cc/Gm6fZY8s/support-1-1.png)
 
-#### Description
+
 Designing using Adobe Illustrator for Supporter Sport Competition.
 This design made on 2019.
 
@@ -58,5 +58,4 @@ This design made on 2019.
 ![](https://i.postimg.cc/JzRVpjX7/infografis-bayi-1-1.png)
 
 
-#### Description
 This is an infographic for participating in the Satria Data 2020 competition in the Statistics Infographic Competition sub-competition. This infographic is only able to make me a participant in the competition and not the winner.
