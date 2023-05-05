@@ -10,7 +10,7 @@ weight: 3
 Hi I am **{{ site.author.name }}** :wave:,<br>
 I'm currently a Data Analyst Intern at Qiscus which will be completed in April 2023. Interested in big data and business intelligence. I have focused my research on using statistical methods to analyze official statistical data. Knowledge of several data analysis tools such as Tableau, SQL, Python and the R programming language also can use several design tools such as Adobe Illustrator and Clip Studio Paint.
 
-{% include elements/button.html link="https://github.com/syafniyazilfah/syafniyazilfah.github.io/blob/76746a1e1c3370e43180561abced199788a21401/assets/Syafniya%20Zilfah%20Aniesiy-CV.pdf" text="Download CV" %}
+{% include elements/button.html link="https://github.com/syafniyazilfah/syafniyazilfah.github.io/blob/81b50f67888c7ebbb375d2f728c8b9bfd801e3a7/assets/CV%20-%20Syafniya%20Zilfah%20Aniesiy%20(Mei%202023).pdf" text="Download CV" %}
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
