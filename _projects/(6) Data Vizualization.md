@@ -5,7 +5,7 @@ image: https://i.postimg.cc/xChsMMBJ/Final-Usecase-2-contoh.png
 description: Data Analyst based Sampling Data Company A
 ---
 
-![](https://i.postimg.cc/xChsMMBJ/Final-Usecase-2-contoh.png)
+![](https://i.ibb.co/3vJMWmR/Final-Usecase-2-contoh.png)
 
 
 ### Description
