@@ -17,7 +17,7 @@ I compared the forecasting results from the 2 software with the actual data that
 {% include elements/button.html link="https://public.tableau.com/views/Usecase2final/FinalUsecase2?:language=en-GB&:display_count=n&:origin=viz_share_link" text="Visualization by Tableau Public" block=true %}
 
 
-![](https://imgur.com/a/2DItUYV)
+![][(https://ibb.co/gz8V3Jf)
 
 
 ### Description
