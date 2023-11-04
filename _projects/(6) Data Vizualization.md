@@ -15,3 +15,14 @@ I compared the forecasting results from the 2 software with the actual data that
 
 ### Tableau Public
 {% include elements/button.html link="https://public.tableau.com/views/Usecase2final/FinalUsecase2?:language=en-GB&:display_count=n&:origin=viz_share_link" text="Visualization by Tableau Public" block=true %}
+
+
+![](https://imgur.com/a/2DItUYV)
+
+
+### Description
+This is a snippet of a sample data visualization from a company whose data I processed and made the visualization for.
+the visualization that I did came from Tableau about Customer Survey to get insights for RnD and Marketing division.
+
+### Tableau Public
+{% include elements/button.html link="https://public.tableau.com/app/profile/syafniya/viz/CustomerSurvey2/Dashboard1" text="Visualization by Tableau Public" block=true %}
