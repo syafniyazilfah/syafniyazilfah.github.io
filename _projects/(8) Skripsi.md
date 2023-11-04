@@ -1,11 +1,11 @@
 ---
 name: Undergraduate Thesis
 tools: [CNN]
-image: https://i.postimg.cc/9MNg5pq0/POSTER-TA-zilfah-final.png
+image: https://i.ibb.co/c1rS2gP/POSTER-TA-zilfah-final.png
 description: Classification of Rice Plant Growth Phase Based on Landsat-8 Satellite Multitemporal Image Data with the Method Convolutional Neural Network (Survey Sample Case Study KSA Poso Regency, Central Sulawesi Province)
 ---
 
-![](https://i.postimg.cc/9MNg5pq0/POSTER-TA-zilfah-final.png)
+![](https://i.ibb.co/c1rS2gP/POSTER-TA-zilfah-final.png)
 
 
 ### Description
