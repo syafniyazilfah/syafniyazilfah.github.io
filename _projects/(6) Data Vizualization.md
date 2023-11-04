@@ -1,7 +1,7 @@
 ---
 name: Data Analyst
 tools: [Tableau, Minitab, SQL]
-image: https://i.postimg.cc/xChsMMBJ/Final-Usecase-2-contoh.png
+image: https://i.ibb.co/3vJMWmR/Final-Usecase-2-contoh.png
 description: Data Analyst based Sampling Data Company A
 ---
 
