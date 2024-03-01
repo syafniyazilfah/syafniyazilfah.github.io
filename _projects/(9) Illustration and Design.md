@@ -4,7 +4,7 @@ tools: [illustration]
 image: https://i.ibb.co/mrKKf3V/ka-rafhi.png
 description: Illustration using Clip Studio Paint also Adobe Illustrator
 ---
-## Illustration using Clip Studio Paint
+## Illustration using Clip Studio Paint 
 
 ![](https://i.ibb.co/mrKKf3V/ka-rafhi.png)
 
