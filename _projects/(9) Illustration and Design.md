@@ -27,7 +27,6 @@ This illustration was created in September 2022.
 
 ![](https://i.ibb.co/X36j8vX/5-last.jpg)
 
-![](https://i.ibb.co/V38cNM7/5.jpg)
 
 ![](https://i.ibb.co/M1GYcdX/4-atas.jpg)
 
