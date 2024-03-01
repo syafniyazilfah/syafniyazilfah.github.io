@@ -50,19 +50,18 @@ it's apparent that the majority of customers make fewer than 5 consume per month
 Regarding the **"salary & spent for baby"** visualization
 It illustrates the monthly income of customers and their expenditures on baby products, including food, drinks, and other essentials. 
 
-<br />Interestingly, some customers spend over 2 million with incomes ranging from 1 to 6 million on baby necessities. Assuming maximum income and minimum expenditure, with a 6 million income, customers are spending one-third of their income on baby needs.
+<br />
+Interestingly, some customers spend over 2 million with incomes ranging from 1 to 6 million on baby necessities. Assuming maximum income and minimum expenditure, with a 6 million income, customers are spending one-third of their income on baby needs.
 
 <br />
 In the **"total transaction counts"** visualization, 
 The "total transaction count" represents the total number of transactions within the span of one year.
 we see that most surveyed customers engage in fewer than 5 transactions within a year. 
 
-<br />
-Moving to **"product most like,"** among all products launched by the company, 
+<br />Moving to **"product most like,"** among all products launched by the company, 
 two products stand out as favorites: **Meat Mix Red Bean Cheese & Beef**, and **Meat Mix Salmon & Seaweed**.
 
-<br />
-Finally, the **"percentage spent from monthly baby stuff"** visualization
+<br />Finally, the **"percentage spent from monthly baby stuff"** visualization
 is a continuation of "salary & spent for baby," depicting customers' expenditure on our company's products as a percentage of their total monthly baby-related expenses. 
 <br />However, this visualization suffers from excessive categorization, indicating a need for improvement. 
 Originally, the data consisted of numerical values, and these percentages were obtained by dividing the expenditure on our products by the monthly baby-related expenditure of each customer.
