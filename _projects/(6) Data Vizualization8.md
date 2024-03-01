@@ -6,9 +6,6 @@ description: Data Analyst based Sampling Data Company A
 ---
 ### Visualizations of the dataset for Forecasting using Tableau and Minitab
 
-![](https://i.ibb.co/3vJMWmR/Final-Usecase-2-contoh.png)
-
-
 <br />
 This is a snippet of a sample data visualization from a company whose data I processed and made the visualization for.
 the visualization that I did came from Tableau and there are 2 forecasting from Tableau and Minitab.
@@ -25,8 +22,6 @@ As a model, Tableau forecasting performs significantly better than Minitab, as i
 
 
 ### Visualizations of Data Customer Survey using Tableau
-
-![](https://i.ibb.co/Lny581c/Dashboard-1.png)
 
 
 <br />
