@@ -4,28 +4,31 @@ tools: [Python]
 image: https://i.ibb.co/r5TtfpM/01.png
 description: Data Analyst based Walmart Data
 ---
+### Walmart Data Analysis
 
 ![](https://i.ibb.co/r5TtfpM/01.png)
 
 This is Walmart data that I use to analyst for
 From that data we know that data have 8 column, there are :
-Store = about label number of Store
-Date = weekly date
-Weekly_Sales = Sales for the given store in that week
-Holiday_Flag = If it is a holiday week
-Temperature = Temperature on the day of the sale
-Fuel_Price = Cost of the fuel in the region
-CPI = Consumer Price Index
-Unemployment = Unemployment rate
+<br /> Store = about label number of Store
+<br /> Date = weekly date
+<br /> Weekly_Sales = Sales for the given store in that week
+<br /> Holiday_Flag = If it is a holiday week
+<br /> Temperature = Temperature on the day of the sale
+<br /> Fuel_Price = Cost of the fuel in the region
+<br /> CPI = Consumer Price Index
+<br /> Unemployment = Unemployment rate
 
 
 I'm curious about the influence of temperature on weekly sales, then I want to know what the affect of Temperature for Weekly_Sales.
-So, I did regression linear analysis between Temperature and Weekly_Sales
+<br /> So, I did regression linear analysis between Temperature and Weekly_Sales
+
+### Regression Linear between Temperature and Weekly_Sales
 
 ![](https://i.ibb.co/9vtpzQ0/02.png)
 
 The scatter plot shows the relationship between Temperature and Weekly_Sales.
-The red line represents a linear regression model that attempts to estimate how Weekly_Sales will change with changes in Temperature
+<br /> The red line represents a linear regression model that attempts to estimate how Weekly_Sales will change with changes in Temperature
 
 ![](https://i.ibb.co/K7LyD68/03.png)
 
@@ -39,4 +42,5 @@ While checking the data for temperatures between 44-46, the data for weekly sale
 
 ![](https://i.ibb.co/518qgDQ/05.png)
 
-Then, I conducted an R-squared score test to assess how temperature affects weekly sales, and I obtained a score of 0.0041, which is very low. Therefore, the conclusion regarding the relationship between temperature and weekly sales is that it is extremely weak.
+Then, I conducted an R-squared score test to assess how temperature affects weekly sales, and I obtained a score of 0.0041, which is very low.
+<br /> Therefore, the conclusion regarding the relationship between temperature and weekly sales is that it is extremely weak.
