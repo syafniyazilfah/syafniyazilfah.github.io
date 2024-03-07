@@ -9,7 +9,6 @@ description: Illustration using Clip Studio Paint also Adobe Illustrator
 ![](https://i.ibb.co/mrKKf3V/ka-rafhi.png)
 
 
-
 This is the result of a digital drawing using the Clip Studio Paint software, with 100% image.
 This illustration was created on January 24, 2023.
 
@@ -17,10 +16,17 @@ This illustration was created on January 24, 2023.
 
 ![](https://i.ibb.co/7vh77SR/Whats-App-Image-2022-09-23-at-15-42-47-2.png)
 
-
+![](https://i.ibb.co/DQGP01P/Whats-App-Image-2022-11-27-at-12-29-50.png)
 
 The result of a digital drawing using the Clip Studio Paint software, where this illustration combines images with photos.
 This illustration was created in September 2022.
+
+
+![](https://i.ibb.co/N2WkwHn/ichak04.png)
+![](https://i.ibb.co/Q8SSJjG/ichak05.png)
+![](https://i.ibb.co/r0Fb9Fm/ichak06.png)
+
+This is a digital drawing using Clip Studio Paint software as gift for anniversarry of my friend and her boyfriend (at that time)
 
 
 ## Feeds Instagram of PRS 2020
