@@ -33,33 +33,27 @@ As a model, Tableau forecasting performs significantly better than Minitab, as i
 This is a snippet of a sample data visualization from a company whose data I processed and made the visualization for.
 the visualization that I did came from Tableau about Customer Survey to get insights for RnD and Marketing division.
 
-<br /><br />
+<br />
 In the **"where knew & bought"** visualization, 
 <br /> I observe that many customers become aware of our product through social media and make purchases on the e-commerce platform Shopee. 
-
 <br /> Interestingly, some customers make purchases on Lazada after learning about the product from Shopee. Although there are also customers who discover the product through TikTok and purchase it on Shopee, TikTok is primarily a video platform, serving a similar purpose to Instagram.
-
 <br />
 Additionally, for customers who become aware of the product through relation, it appears they tend to make purchases on Shopee as well. 
 
-<br /><br />
-Moving on to the **"consume per Month"** visualization
 <br />
-it's apparent that the majority of customers make fewer than 5 consume per month.
+Moving on to the **"consume per Month"** visualization
+<br /> It's apparent that the majority of customers make fewer than 5 consume per month.
 
 <br />
 Regarding the **"salary & spent for baby"** visualization
 <br /> It illustrates the monthly income of customers and their expenditures on baby products, including food, drinks, and other essentials. 
+<br /> Interestingly, some customers spend over 2 million with incomes ranging from 1 to 6 million on baby necessities. Assuming maximum income and minimum expenditure, with a 6 million income, customers are spending one-third of their income on baby needs.
 
-<br /><br /> Interestingly, some customers spend over 2 million with incomes ranging from 1 to 6 million on baby necessities. Assuming maximum income and minimum expenditure, with a 6 million income, customers are spending one-third of their income on baby needs.
-
-<br /><br /> 
-In the **"total transaction counts"** visualization, 
+<br /><br /> In the **"total transaction counts"** visualization, 
 <br /> The "total transaction count" represents the total number of transactions within the span of one year.
 <br />we see that most surveyed customers engage in fewer than 5 transactions within a year. 
 
-<br /><br />
-Moving to **"product most like,"** among all products launched by the company, 
+<br /><br />Moving to **"product most like,"** among all products launched by the company, 
 <br />two products stand out as favorites: **Meat Mix Red Bean Cheese & Beef**, and **Meat Mix Salmon & Seaweed**.
 
 <br />
