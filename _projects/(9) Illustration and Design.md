@@ -61,3 +61,4 @@ This design made on 2019.
 
 
 This is an infographic for participating in the Satria Data 2020 competition in the Statistics Infographic Competition sub-competition. This infographic is only able to make me a participant in the competition and not the winner.
+
