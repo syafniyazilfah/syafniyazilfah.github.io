@@ -1,6 +1,6 @@
 ---
 name: Illustration and Design
-tools: [illustration]
+tools: [illustration, Adobe Illustrator, Clip Studio Paint]
 image: https://i.ibb.co/wNc7JB1/ka-rafhi-ttd.png
 description: Illustration using Clip Studio Paint also Adobe Illustrator
 ---
