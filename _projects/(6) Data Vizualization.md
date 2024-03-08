@@ -26,7 +26,7 @@ As a model, Tableau forecasting performs significantly better than Minitab, as i
 
 ### Visualizations of Data Customer Survey using Tableau
 
-![](https://i.ibb.co/Lny581c/Dashboard-1.png)
+![](https://i.ibb.co/XJgrDkQ/Dashboard-1.png)
 
 
 <br />
@@ -59,6 +59,7 @@ Regarding the **"salary & spent for baby"** visualization
 <br />
 Finally, the **"percentage spent from monthly baby stuff"** visualization
 is a continuation of "salary & spent for baby," depicting customers' expenditure on our company's products as a percentage of their total monthly baby-related expenses. 
-<br /><br />However, this visualization suffers from excessive categorization, indicating a need for improvement. 
-<br />Originally, the data consisted of numerical values, and these percentages were obtained by dividing the expenditure on our products by the monthly baby-related expenditure of each customer.
-<br /><br />Upon review, I plan to categorize these percentages before visualizing them.
+<br /><br />After obtaining the percentage of monthly expenditure on baby stuff from each respondent, I categorized them into four groups to analyze the distribution and majority of spending on our products among respondents' monthly baby needs.
+<br />Originally, the data consisted of numerical values, and these percentages were obtained by dividing the expenditure on our products by the monthly baby-related expenditure of each respondent.
+
+<br /><br /> The visualization of the **"Average Percentage Spent for us"** depicts the mean percentage of expenditure by all respondents on our baby products monthly. This insight provides a comprehensive overview of the average commitment to our offerings within the baby product market.
