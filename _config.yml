@@ -1,9 +1,9 @@
 ### Site Settings ###
 title               : Syafniya Zilfah
 description         : >-
-                      I am Zilfah, a Bachelor of Statistics, 
+                      I’m Zilfah, a Statistician and Data Enthusiast with a passion for visualizing data in creative ways. 
                       
-                      a Data Enthusiast who also loves visualization :coffee:
+                      Every chart tells a story, and I love bringing those stories to life! 📊🌟
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : syafniyazilfah/syafniyazilfah.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
