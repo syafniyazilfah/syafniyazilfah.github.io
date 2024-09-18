@@ -1,14 +1,14 @@
 ---
 name: Lanting
 tools: [YoLoV3, Machine Learning]
-image: https://i.ibb.co/YhZQdNW/lantingg.jpg
+image: https://i.ibb.co.com/YhZQdNW/lantingg.jpg
 
 description: Lanting is an application that prevent / reduce stunting cases in Indonesia by controlling the adequacy of nutritional needs for the body via application.
 ---
 
 ### Overview
 
-![](https://i.ibb.co/YhZQdNW/lantingg.jpg)
+![](https://i.ibb.co.com/YhZQdNW/lantingg.jpg)
 
 This project is the capstone project of the Awakening program held by the Ministry of Education and Culture in collaboration with Gojek, Google, Tokopedia and Traveloka.
 Lanting was carried out by 6 people:
