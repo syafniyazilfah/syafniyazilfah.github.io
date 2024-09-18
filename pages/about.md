@@ -10,7 +10,7 @@ weight: 3
 Hi I am **{{ site.author.name }}** :wave:,<br>
 I'm interested in big data and business intelligence. I have focused my research on using statistical methods to analyze official statistical data. Knowledge of several data analysis tools such as Tableau, SQL, Python and the R programming language also can use several design tools such as Adobe Illustrator and Clip Studio Paint.
 
-{% include elements/button.html link="https://github.com/syafniyazilfah/syafniyazilfah.github.io/blob/81c8eb1f6e89e21d3c6cdea9027ec4616d4668c0/assets/CV%20-%20Syafniya%20Zilfah.pdf" text="Download CV" %}
+{% include elements/button.html link="https://github.com/syafniyazilfah/syafniyazilfah.github.io/blob/a05284dd795140e109c74154855dfe5c181d2db4/assets/CV%20-%20Syafniya%20Zilfah.pdf" text="Download CV" %}
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
