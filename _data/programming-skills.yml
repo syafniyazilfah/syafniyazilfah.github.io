@@ -1,9 +1,9 @@
 - name: SQL
-  percentage: 70
+  percentage: 50
   color: secondary
 
 - name: Phyton
-  percentage: 50
+  percentage: 60
   color: info
   
 - name: R
