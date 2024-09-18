@@ -26,8 +26,11 @@ The result of a digital drawing using the Clip Studio Paint software, where this
 This illustration was created in September 2022.
 
 ![](https://i.ibb.co.com/7CbVqHV/Whats-App-Image-2024-09-18-at-09-27-03.jpg)
+
 ![](https://i.ibb.co.com/Cnxwcqp/Whats-App-Image-2024-09-18-at-09-27-04-1.jpg)
+
 ![](https://i.ibb.co.com/FqjbTVm/Whats-App-Image-2024-09-18-at-09-27-04.jpg)
+
 The result of a digital drawing using the Clip Studio Paint software, where this illustration combines images with photos.
 This illustration was created in September 2024.
 
