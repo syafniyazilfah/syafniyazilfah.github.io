@@ -1,12 +1,15 @@
 - title: Data Analyst - Sinergi Ayu Semesta
   from: August, 2024
   to: Now
-  description:  I developed automation for the warehouse admin team of the Purela brand, streamlining the process of inputting sales data from e-commerce platforms like TikTok and Shopee. This automation significantly improved efficiency by processing shipment receipts in PDF format using Python,
-                <br> extracting essential information such as product names, order IDs, items sold, and prices, and converting the data into an Excel format. This solution enhanced the accuracy and speed of sales data reconciliation for the warehouse team.
-                <br><br> Additionally, I created a sales dashboard using Looker Studio, which provided the sales manager with critical insights to optimize sales strategies. This dashboard also helped the customer service (CS) team improve their approach to increasing sales and handling product returns,
-                <br> contributing to higher customer satisfaction and reduced return rates.
-                <br><br> I also integrated data from the company website, cleaning and organizing data from PDF files to be used by the purchasing team. This integration included extracting essential details such as factory names, product quantities, product types, and purchase order numbers,
-                <br> ensuring the purchasing team had accurate and actionable data.
+  description:  I developed automation for the warehouse admin team of the Purela brand, streamlining the process of inputting sales data from e-commerce platforms like TikTok and Shopee.
+                <br>This automation significantly improved efficiency by processing shipment receipts in PDF format using Python,
+                <br>extracting essential information such as product names, order IDs, items sold, and prices, and converting the data into an Excel format.
+                <br>This solution enhanced the accuracy and speed of sales data reconciliation for the warehouse team.
+                <br><br>Additionally, I created a sales dashboard using Looker Studio, which provided the sales manager with critical insights to optimize sales strategies.
+                <br>This dashboard also helped the customer service (CS) team improve their approach to increasing sales and handling product returns, contributing to higher customer satisfaction and reduced return rates.
+                <br><br>I also integrated data from the company website, cleaning and organizing data from PDF files to be used by the purchasing team.
+                <br>This integration included extracting essential details such as factory names, product quantities, product types, and purchase order numbers,
+                <br>ensuring the purchasing team had accurate and actionable data.
                 <br><br> Moreover, I developed a B2B sales forecasting model using ARIMA with Python, as Looker Studio lacks built-in forecasting features. This model enabled the sales manager to plan and implement strategies for meeting sales targets more effectively by anticipating future sales trends.
                 <br><br> Additionally, I built a Looker Studio dashboard for keyword insights from TikTok, which provided the marketing team with valuable keywords to attract buyers. The data was sourced from TikTok ads, identifying those most relevant to the company’s products.
                 <br> 
