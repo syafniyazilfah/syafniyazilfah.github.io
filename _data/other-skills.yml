@@ -16,7 +16,7 @@
 
 - name: Power BI
   percentage: 30
-  color: yellow
+  color: danger
 
 - name: Clip Studio Paint
   percentage: 40
