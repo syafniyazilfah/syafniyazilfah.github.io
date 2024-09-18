@@ -1,7 +1,7 @@
 ---
 name: Data Analyst
 tools: [Python]
-image: https://i.ibb.co/r5TtfpM/01.png
+image: https://i.ibb.co.com/r5TtfpM/01.png
 description: Data Analyst based Walmart Data
 ---
 ### Walmart Data Analysis
