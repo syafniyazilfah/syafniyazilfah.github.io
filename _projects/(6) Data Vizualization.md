@@ -1,12 +1,12 @@
 ---
 name: Data Visualization
 tools: [Tableau, Minitab, SQL]
-image: https://i.ibb.co/3vJMWmR/Final-Usecase-2-contoh.png
+image: https://i.ibb.co.com/3vJMWmR/Final-Usecase-2-contoh.png
 description: Data Analyst based Sampling Data Company A 
 ---
 ### Visualizations of the dataset for Forecasting using Tableau and Minitab
 
-![](https://i.ibb.co/3vJMWmR/Final-Usecase-2-contoh.png)
+![](https://i.ibb.co.com/3vJMWmR/Final-Usecase-2-contoh.png)
 
 
 <br />
@@ -26,7 +26,7 @@ As a model, Tableau forecasting performs significantly better than Minitab, as i
 
 ### Visualizations of Data Customer Survey using Tableau
 
-![](https://i.ibb.co/XJgrDkQ/Dashboard-1.png)
+![](https://i.ibb.co.com/XJgrDkQ/Dashboard-1.png)
 
 
 <br />
