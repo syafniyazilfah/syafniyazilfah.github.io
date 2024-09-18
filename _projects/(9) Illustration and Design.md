@@ -7,14 +7,11 @@ description: Illustration using Clip Studio Paint also Adobe Illustrator
 ## Illustration using Clip Studio Paint
 
 
-
-
-
 ![](https://i.ibb.co.com/wNc7JB1/ka-rafhi-ttd.png)
 
 
 This is the result of a digital drawing using the Clip Studio Paint software, with 100% image.
-This illustration was created on January 24, 2023.
+This illustration was created on January 24, 2023.<br><br><br>
 
 ## Illustration on Photo
 
@@ -23,7 +20,7 @@ This illustration was created on January 24, 2023.
 ![](https://i.ibb.co.com/f85kWtJ/Whats-App-Image-2022-11-27-at-12-29-50-ttd.png)
 
 The result of a digital drawing using the Clip Studio Paint software, where this illustration combines images with photos.
-This illustration was created in September 2022.
+This illustration was created in September 2022.<br><br><br>
 
 ![](https://i.ibb.co.com/7CbVqHV/Whats-App-Image-2024-09-18-at-09-27-03.jpg)
 
@@ -32,13 +29,13 @@ This illustration was created in September 2022.
 ![](https://i.ibb.co.com/FqjbTVm/Whats-App-Image-2024-09-18-at-09-27-04.jpg)
 
 The result of a digital drawing using the Clip Studio Paint software, where this illustration combines images with photos.
-This illustration was created in September 2024.
+This illustration was created in September 2024. <br><br><br>
 
 ![](https://i.ibb.co.com/rmD85MT/ichak4-ttd.png)
 ![](https://i.ibb.co.com/vYgvCcX/ichak5-ttd.png)
 ![](https://i.ibb.co.com/txdqygj/ichak06-ttd.png)
 
-This is a digital drawing using Clip Studio Paint software as gift for anniversarry of my friend and her boyfriend.
+This is a digital drawing using Clip Studio Paint software as gift for anniversarry of my friend and her boyfriend.<br><br><br>
 
 
 ## Feeds Instagram of PRS 2020
