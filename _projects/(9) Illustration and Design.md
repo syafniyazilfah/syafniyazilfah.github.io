@@ -38,7 +38,7 @@ This illustration was created in September 2024.
 ![](https://i.ibb.co.com/vYgvCcX/ichak5-ttd.png)
 ![](https://i.ibb.co.com/txdqygj/ichak06-ttd.png)
 
-This is a digital drawing using Clip Studio Paint software as gift for anniversarry of my friend and her boyfriend (at that time)
+This is a digital drawing using Clip Studio Paint software as gift for anniversarry of my friend and her boyfriend.
 
 
 ## Feeds Instagram of PRS 2020
