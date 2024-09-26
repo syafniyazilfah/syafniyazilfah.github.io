@@ -1,5 +1,5 @@
 ---
-name: Data Analyst
+name: Data Analysis of Walmart
 tools: [Python]
 image: https://i.ibb.co.com/r5TtfpM/01.png
 description: Data Analysis based Walmart Data
