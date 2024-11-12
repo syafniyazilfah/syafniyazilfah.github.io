@@ -1,5 +1,5 @@
 - title: Data Analyst - Sinergi Ayu Semesta
-  from: August, 2024
+  from: July, 2024
   to: Now
   description:  I developed automation for the warehouse admin team of the Purela brand, streamlining the process of inputting sales data from e-commerce platforms like TikTok and Shopee.
                 <br><br>This automation significantly improved efficiency by processing shipment receipts in PDF format using Python, extracting essential information such as product names, order IDs, items sold, and prices, and converting the data into an Excel format.
