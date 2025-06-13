@@ -1,8 +1,8 @@
 ---
 title: New Era of Reading Data with Visualization in small business
 tags: [Data, Python, Looker Studio]
-style: 
-color: 
+style: fill
+color: light
 description: What started as a lack of awareness about how data visualization could simplify reporting eventually turned into genuine interest and recognition of its importance.
 ---
 
