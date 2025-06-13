@@ -48,7 +48,7 @@ author:
 
 
 ### Posts ###
-permalink: /struggle/:title
+permalink: /blog/:title
 
 
 ### Collections ###
