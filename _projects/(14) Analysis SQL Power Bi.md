@@ -34,24 +34,28 @@ From the data visualization, I was able to gather several insights, including:
 <br />Skills related to machine learning frameworks (PyTorch, TensorFlow, Kubernetes) and cloud platforms (GCP, AWS, Azure) are consistently required.
 
 2. Job Vacancy Closing Time:
-<br />70.94% of AI-related job vacancies are filled within 2 weeks, showing a high demand for talent and fast recruitment cycles.
-<br />Only 1.57% take more than 1 month to close.
+<br />70.94% of AI-related job vacancies are filled within more than 1 month, showing a high demand for talent and serious recruitment cycles.
+<br />Only 1.57% take less than 2 weeks to close.
 
 3. Salary by Employment Level:
-<br /> Senior positions (EX - Executive and SE - Senior) have significantly higher average salaries, reaching around $200K.
+<br /> EX positions have significantly higher average salaries, reaching around $200K.
 <br /> Entry-level (EN) roles have the lowest average salaries.
+<br /> As many people might expect, this can serve as a benchmark for salary expectations among job seekers.
 
-4. Employee Citizenship:
+
+5. Employee Citizenship:
 <br />Around 28.37% of employees working in AI roles are foreigners, suggesting that companies are open to hiring international talent.
 <br />71.63% of roles are filled by employees with citizenship in the company's country.
 
-5. Years of Experience Required:
-<br />5–10 years of experience is the most common requirement (~7.5K job postings).
-<br />Entry-level positions (0–4 years) make up a smaller share (~1.8K postings).
-<br />Education Requirements:
-<br />Education levels required are fairly evenly distributed between Bachelor’s, Master’s, and PhD across experience levels.
-<br />Senior roles (EX) slightly lean toward requiring a Master’s degree.
+6. Years of Experience Required:
+<br />0–4 years of experience is the most common requirement (~7.5K job postings).
+<br />15–20 years of experience make up a smaller share (~1.8K postings).
 
-6. Company Size and Working Type:
-<br />Regardless of company size (small, medium, or large), Hybrid working arrangements are the most common, slightly above 33% for each.
+7. Education Requirements:
+<br />Education levels required are fairly evenly distributed between Bachelor’s, Master’s, and PhD across experience levels.
+<br />EX roles slightly lean toward requiring a Master’s degree.
+
+8. Company Size and Working Type:
+<br />Regardless of company size (small, medium, or large), Hybrid working arrangements are the most common, slightly above 33% for each. 
 <br />WFH (Work from Home) and WFO (Work from Office) share the remainder almost equally.
+<br />That means even though the difference between WFH, WFO, and Hybrid is quite small, it’s clear here that Hybrid has the lowest proportion among the three. This suggests that most companies tend to prefer either fully WFH or fully WFO, rather than a mix of both.
