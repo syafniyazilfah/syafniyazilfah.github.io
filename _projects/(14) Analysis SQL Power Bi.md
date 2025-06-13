@@ -1,7 +1,7 @@
 ---
 name: Analysis That I Did using Job AI from Kaggle
 tools: [SQL, Power Bi]
-image: https://i.ibb.co/hFtpf91Z/Whats-App-Image-2025-06-13-at-5-23-17-AM-2.jpg
+image: https://i.ibb.co/hFBHRwnz/job-ai-4.png
 description: The data I used for this portfolio is data from Kaggle.
 ---
 
@@ -9,21 +9,21 @@ description: The data I used for this portfolio is data from Kaggle.
 ### Cleaning data from raw data with query using MYSQL Workbench
 <br />
 After obtaining the data from Kaggle, since it was in CSV format, I needed to import it into MySQL Workbench. Once imported, I could see the columns in the table, which were as follows:
-![](https://i.ibb.co/WNG4MLvL/Whats-App-Image-2025-06-13-at-5-23-17-AM-1.jpg)
+![](https://i.ibb.co/pBjCyFVB/job-ai-1.png)
 <br /><br />
 I noticed an interesting part of the data, which was the skills column. This column lists the skills required for each job position.
-![](https://i.ibb.co/CKPvkn8n/Whats-App-Image-2025-06-13-at-5-23-17-AM.jpg)
+![](https://i.ibb.co/j90QbZP2/job-ai-2.png)
 <br /><br />
 
 I wanted to clearly see how many AI-related job vacancies required each individual skill. However, since the data was still grouped together, it needed to be separated using the following query:
-![](https://i.ibb.co/pN8W5tH/Whats-App-Image-2025-06-13-at-5-23-17-AM-3.jpg)
+![](https://i.ibb.co/8DPpPnk4/job-ai-3.png)
 <br /><br />
 
 ### Visualization data using Power Bi
 <br />
 After getting the separated data, I continued with the visualization using Power BI, connected to my local server (since I stored the data locally). In Power BI, I used DAX to add several additional columns to make the visuals easier to read — for example, grouping the year_experience column (which was originally just numbers), calculating the difference between the job opening and closing dates, and so on. Finally, I got the visualization result as shown below:
 <br />
-![](https://i.ibb.co/hFtpf91Z/Whats-App-Image-2025-06-13-at-5-23-17-AM-2.jpg)
+![](https://i.ibb.co/hFBHRwnz/job-ai-4.png)
 
 <br />
 <br />
