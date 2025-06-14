@@ -6,7 +6,7 @@ color: info
 description: In a company where lack awareness of data also lack awareness of Data Analyst.
 ---
 
-The sad part is, I’m a Data Analyst placed in the IT Division, led by someone who doesn’t even understand the actual role of a Data Analyst. (Yep — during the interview, the hiring manager was from the Sales division, but I was placed in IT because there are many business units, so they thought it would be “fair” to put me there.) The problem is, while my leader has access to the server, I don’t have any access at all.
+As a Data Analyst assigned to the IT Division, I encountered challenges related to limited access to server resources, despite the critical role I play in data analysis. This situation is partly due to organizational structure where my reporting line differs from the business units I support, which sometimes creates gaps in communication and resource allocation.
 
 ## So, how do i improve my SQL skills?
 Because I couldn’t use SQL for work at the company and didn’t want to lose my SQL skills, I decided to keep practicing repeatedly through LeetCode and DataCamp, as well as studying on W3Schools.
