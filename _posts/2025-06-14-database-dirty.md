@@ -3,7 +3,7 @@ title: Overcoming Data Infrastructure Challenges for CRM Division
 tags: [Data, SQL]
 style: border
 color: light
-description: In a company where lack awareness of data also lack awareness of Data Analyst.
+description: Addressing data integration challenges in a new CRM division.
 ---
 
 A few weeks after being transferred to the newly formed CRM division, which requires extra data processing, I faced significant challenges related to data integration within the company. The CRM team relies on data from various sources, including advertising data and sales data, but these datasets were not yet fully integrated.
