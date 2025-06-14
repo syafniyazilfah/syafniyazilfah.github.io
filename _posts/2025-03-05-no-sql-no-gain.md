@@ -3,7 +3,7 @@ title: Cannot Explore Data in Server that Already Haven
 tags: [Data, SQL]
 style: border
 color: info
-description: In a company where lack awareness of data also lack awareness of Data Analyst.
+description: Maintaining SQL skills despite limited access.
 ---
 
 As a Data Analyst assigned to the IT Division, I encountered challenges related to limited access to server resources, despite the critical role I play in data analysis. This situation is partly due to organizational structure where my reporting line differs from the business units I support, which sometimes creates gaps in communication and resource allocation.
