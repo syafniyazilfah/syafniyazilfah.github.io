@@ -1,5 +1,5 @@
 ---
-name: Visualization That I Did when Being Data Analyst of Sinergi Group
+name: Dashboard of Sinergi Group
 tools: [Looker Studio, Python, Spreadsheet]
 image: https://i.ibb.co.com/2kYmyWk/Screenshot-2024-11-05-123128.png
 description: The data I used for this portfolio is dummy data.
