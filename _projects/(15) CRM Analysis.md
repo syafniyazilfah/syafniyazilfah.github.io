@@ -12,6 +12,7 @@ In this dataset, whenever a customer clicks on an ad, they are counted as a lead
 
 Therefore, it's necessary to generate dummy data consisting of ads data, leads data, and purchase data to perform this analysis.
 
+
 ````
 import pandas as pd
 import numpy as np
@@ -119,6 +120,8 @@ df_purchase = pd.DataFrame(purchase_records, columns=[
 After generating the data, I need to calculate the total purchase amount per customer, label whether a transaction is a first purchase, identify retention by checking for repeat purchases, and also flag second purchases if they occur within 45 days of the first purchase.
 
 <br />
+
+
 ````
 uniquetx = cek[['customer_id', 'purchase_date', 'transaction_id']].drop_duplicates().sort_values(['customer_id', 'purchase_date', 'transaction_id'])
 uniquetx['purchase_order'] = uniquetx.groupby('customer_id').cumcount() + 1
@@ -143,6 +146,8 @@ uniquetx['second_purchase'] = np.where(
 and the result will be like this
 
 <br />
+
+
 <div style="font-size: 10px">
 | transaction_id | purchase_date | customer_id | total  | amount  | purchase_order | first_purchase | retention | gap_days_since_first | second_purchase |
 |----------------|---------------|-------------|--------|---------|----------------|----------------|-----------|----------------------|-----------------|
@@ -159,6 +164,7 @@ and the result will be like this
 | TXN1132881     | 2024-12-31    | CUST0985650 | 460.04 | 460.04  | 1              | yes            |           | 0                    |                 |
 
 <br /><br />
+
 I also need tiering to complete the customer lifecycle analysis in CRM. I’ve designed the tiering segmentation based on customer purchase behavior in the last 6 months, with the following criteria:
 
 Power User: Total purchases over 2000 and more than 6 transactions.
@@ -169,6 +175,8 @@ Tier 1: At least 1 purchase in the last 6 months, but total purchases under 550 
 This segmentation helps in identifying high-value customers for targeted marketing and retention strategies.
 
 <br />
+
+
 ````
 cutoff_date = pd.to_datetime('2024-12-31') - pd.DateOffset(months=6)
 recent_purchase = cek[cek['purchase_date'] >= cutoff_date]
@@ -195,10 +203,14 @@ cek = pd.merge(cek, customer_cltv, on='customer_id', how='left')
 cek['tier'] = cek['tier'].fillna('No Tier')
 
 ````
+
+
 <br />
 I applied fillna() to anticipate cases where customers don’t have any purchases within the last 6 months. This ensures that these customers are still included in the dataset with a default tier label (e.g., 'No Tier'), making it easier to differentiate active from inactive customers during analysis. The result will be like this.
 
 <br />
+
+
 <div style="font-size: 10px">
 | transaction_id | purchase_date | customer_id | total  | amount  | purchase_order | first_purchase | retention | gap_days_since_first | second_purchase | tier    |
 |----------------|---------------|-------------|--------|---------|----------------|----------------|-----------|----------------------|-----------------|---------|
@@ -213,9 +225,13 @@ I applied fillna() to anticipate cases where customers don’t have any purchase
 | TXN0936038     | 2024-12-31    | CUST0814528 | 495.26 | 495.26  | 3              |                | yes       | 65                   |                 | Tier 2  |
 | TXN0871616     | 2024-12-31    | CUST0758551 | 337.68 | 337.68  | 3              |                | yes       | 85                   |                 | Tier 3  |
 | TXN1132881     | 2024-12-31    | CUST0985650 | 460.04 | 460.04  | 1              | yes            |           | 0                    |                 | Tier 1  |
+
+    
+
 <br /><br />
 But how do i know the conversion from ads to leads to purchase? I need to merge 2 tables (leads, and purchase, because for lifecycle only need 2 of these) and visualize it with funnel chart
 <br />
+
     
 ````
 leads = df_leads.groupby('lead_date')['customer_id'].nunique().sum()
@@ -302,6 +318,8 @@ fig.show()
 
 
 ````
+
+
 <br />
 
 and i got this
