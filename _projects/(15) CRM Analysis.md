@@ -1,7 +1,7 @@
 ---
 name: CRM Analysis
 tools: [SQL, Power Bi]
-image: https://ik.imagekit.io/syafniya/job_ai%204.png?updatedAt=1749818543007
+image: https://ik.imagekit.io/syafniya/newplot%20(2).png?updatedAt=1749955981244
 description: Analysis that i did in my company before but with generated data by python
 ---
 
