@@ -28,7 +28,7 @@ With a combination of analytical skills and creative thinking, I’m passionate 
           <h2>Sepuluh Nopember Institute of Technology, Indonesia</h2>
           <h6 class="date">2018 - 2022</h6>
           <p>Bachelor of Statistics, Faculty of Science and Data Analytics, with a GPA of 3.44 out of 4.0</p>
-          <p>During college, I joined an organization under the Statistics Student Association at ITS called the Statistics Computer Course. I served as an HRD staff member for over a year. In this organization, we also had a program where every member took turns mentoring fellow students who wanted to learn about computer programming.</p>
+          <p>During college, I joined an organization under the Statistics Student Association at Sepuluh Nopember Institute of Technology called the Statistics Computer Course. I served as an HRD staff member for over a year. In this organization, we also had a program where every member took turns mentoring fellow students who wanted to learn about computer programming.</p>
           <p>I was also involved in a department event called the Statistics Fair (Pekan Raya Statistika), where I worked as a graphic designer responsible for creating Instagram feed designs. Outside of these formal roles, many of my friends who were active in the Statistics Student Association often came to me for advice and discussions about their design work, even though I wasn’t officially part of that organization. I enjoyed these discussions, as they allowed me to exchange ideas and sharpen my creative thinking.</p>
         </div>
       </div>
