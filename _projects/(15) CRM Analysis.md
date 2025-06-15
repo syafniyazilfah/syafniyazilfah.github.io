@@ -132,7 +132,7 @@ uniquetx = uniquetx.sort_values('purchase_order', ascending=False)
 uniquetx['first_purchase'] = np.where(uniquetx['purchase_order']==1, 'yes', '')
 uniquetx['retention'] = np.where(uniquetx['purchase_order']>=2, 'yes', '')
 
-# for labelling trnasaction of second purchase in range 45 days after first_purchase
+# for labelling trnasaction of second purchase in range 65 days after first_purchase
 uniquetx['gap_days_since_first'] = (
   uniquetx['purchase_date'] - uniquetx.groupby('customer_id')['purchase_date'].transform('min')
 ).dt.days
@@ -325,7 +325,7 @@ and the result must be like this
 
 
 <br />
-and now funnel left
+And now funnel left
 <br />
 
 ````
@@ -358,6 +358,16 @@ fig.show()
 
 
 
-and i got this
+From the coding i got this funnel chart that can represent about lifecycle of customer from leads until tiering.
 
 ![](https://ik.imagekit.io/syafniya/newplot%20(2).png?updatedAt=1749955981244)
+
+It is evident that the funnel from leads to power users gradually narrows.
+
+Initially, there were 985K customers showing interest in purchasing the product. Out of those, 629K customers actually completed their first purchase. This means that 63.8% of the leads converted into buyers, while the remaining 36.2% decided not to proceed with the purchase despite showing interest through advertisements.
+
+Furthermore, of the 63.8% who made their first purchase, only 60% (or 377K customers) made a repeat purchase within 2 months. This implies that, out of the original 985K leads, only 377K customers (around 30%) converted into repeat buyers within 2 months after their first purchase.
+
+To improve conversion from interest to purchase, the 36.2% of leads who didn’t convert can be targeted through remarketing campaigns offering first-purchase promotions.
+
+Meanwhile, to encourage repeat purchases from the 40% of customers who bought once but did not return within 2 months, strategies such as membership programs or “buy 1, get 1 free” promotions can be utilized.
