@@ -31,9 +31,17 @@
 - title: Machine Learning Student - Google Bangkit 2021
   from: Feb, 2021
   to: June, 2021
-  description:  An exclusive academy led by Google, Tokopedia, Gojek & Traveloka. 
-                <br> Designed to prepare students with in-demand skills and tech certifications, 
-                <br> the new Bangkit curriculum offers 3 interdisciplinary learning paths - machine learning, mobile development, and cloud computing.
+  description:  Bangkit Academy is an exclusive career readiness program initiated by Google and supported by leading Indonesian tech companies, including Tokopedia, Gojek, and Traveloka.
+                <br><br>Designed to equip students with in-demand skills and industry-recognized certifications, Bangkit offers three interdisciplinary learning paths: Machine Learning, Mobile Development, and Cloud Computing. The curriculum focuses on technical mastery, soft skills development, and English communication, preparing participants for successful careers in the tech industry.
+                <br><br>As part of the Bangkit Academy program, I participated in a Capstone Project as a final requirement for graduation. The project was carried out in teams of six members, with two participants from each learning path (Machine Learning, Mobile Development, and Cloud Computing). Each team selected a theme aligned with real-world problems, and we also received guidance from industry mentors throughout the development process.
+                <br><br>My team chose the health sector, focusing specifically on the issue of stunting prevention. We developed a mobile application designed to detect the nutritional content of foods for pregnant women, breastfeeding mothers, and toddlers, addressing the critical first 1000 days of a child's life—a crucial period for preventing stunting.
+                <br><br>I was responsible for the Machine Learning aspect of the project. I implemented YOLOv3 (You Only Look Once version 3) as our object detection model because of its ability to detect multiple objects in an image simultaneously. Since there was no readily available dataset for Indonesian foods, we collected and labeled the dataset ourselves as a team.
+                <br><br>One of the challenges we faced was that calculating nutrition requires knowing the weight of the food, while our image data alone wasn't sufficient for that purpose. To solve this, we added an input feature allowing users to enter the estimated weight of the food manually.
+                <br><br>Beyond food detection and nutritional analysis, the app also featured:
+                <br>- Personalized menu recommendations based on the user’s budget
+                <br>- Educational content about nutrition, maternal and child health, and stunting prevention
+                <br>- This project taught me not only technical skills but also the importance of collaboration, time management, and adapting solutions to real-world limitations.
+
 
 - title: Teaching Assistant - Sepuluh Nopember Institute of Technology
   from: Feb, 2022
