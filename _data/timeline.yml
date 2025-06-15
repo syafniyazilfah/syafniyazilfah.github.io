@@ -31,7 +31,8 @@
 - title: Machine Learning Student - Google Bangkit 2021
   from: Feb, 2021
   to: June, 2021
-  description:  Bangkit Academy is an exclusive career readiness program initiated by Google and supported by leading Indonesian tech companies, including Tokopedia, Gojek, and Traveloka.
+  description:  |
+                Bangkit Academy is an exclusive career readiness program initiated by Google and supported by leading Indonesian tech companies, including Tokopedia, Gojek, and Traveloka.
                 <br><br>Designed to equip students with in-demand skills and industry-recognized certifications, Bangkit offers three interdisciplinary learning paths: Machine Learning, Mobile Development, and Cloud Computing. The curriculum focuses on technical mastery, soft skills development, and English communication, preparing participants for successful careers in the tech industry.
                 <br><br>As part of the Bangkit Academy program, I participated in a Capstone Project as a final requirement for graduation. The project was carried out in teams of six members, with two participants from each learning path (Machine Learning, Mobile Development, and Cloud Computing). Each team selected a theme aligned with real-world problems, and we also received guidance from industry mentors throughout the development process.
                 <br><br>My team chose the health sector, focusing specifically on the issue of stunting prevention. We developed a mobile application designed to detect the nutritional content of foods for pregnant women, breastfeeding mothers, and toddlers, addressing the critical first 1000 days of a child's life—a crucial period for preventing stunting.
