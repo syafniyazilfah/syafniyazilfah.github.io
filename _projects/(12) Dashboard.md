@@ -22,7 +22,7 @@ Additionally, the ads cost worsened the situation, with spending exceeding the t
 
 <br />
 <br />
-![](https://ik.imagekit.io/syafniya/Screenshot%202025-06-15%20142353.png?updatedAt=1749972391338)
+![](https://ik.imagekit.io/syafniya/Screenshot%202025-06-15%20143009.png?updatedAt=1749972681036)
 
 <br />
 The comparison between the revenue generated and the expenses incurred to achieve that revenue appears favorable, as the expenses are not exceeding the revenue. However, for leads, the revenue-to-expense ratio is around 9:1, and for the marketplace, it’s approximately 10:1, which is quite challenging and less efficient. 
@@ -33,7 +33,7 @@ The repeat segment represents repeat purchases by customers (customers making ad
 
 <br />
 <br />
-![](https://ik.imagekit.io/syafniya/Screenshot%202025-06-15%20142436.png?updatedAt=1749972390635)
+![](https://ik.imagekit.io/syafniya/Screenshot%202025-06-15%20143030.png?updatedAt=1749972681270)
 
 <br />
 Here is a dashboard I created to visualize the marketing team’s performance in social media, using dummy data.
