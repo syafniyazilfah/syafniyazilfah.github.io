@@ -8,7 +8,11 @@ weight: 3
 # **About Me**
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
-I'm interested in big data and business intelligence. I have focused my research on using statistical methods to analyze official statistical data. Knowledge of several data analysis tools such as Tableau, SQL, Python and the R programming language also can use several design tools such as Adobe Illustrator and Clip Studio Paint.
+I’m a Data Analyst with a strong interest in big data and business intelligence. I focus on applying statistical methods to transform data into actionable insights that drive smarter business decisions.
+
+I primarily work with SQL, Python, Looker Studio, Power BI, and Metabase for data processing, analysis, and visualization. I also have a creative background in design, using Adobe Illustrator and Clip Studio Paint to enhance how data stories are communicated.
+
+With a combination of analytical skills and creative thinking, I’m passionate about translating complex data into clear, impactful visuals that help businesses grow.
 
 {% include elements/button.html link="https://github.com/syafniyazilfah/syafniyazilfah.github.io/blob/b22e57a5fd8c3a7a05991cbd8e1759e7fe269f22/assets/CV%20-%20Syafniya%20Zilfah%20A.pdf" text="Download CV" %}
 
