@@ -208,51 +208,45 @@ I applied fillna() to anticipate cases where customers don’t have any purchase
 
 But how do i know the conversion from ads to leads to purchase? I need to merge 2 tables (leads, and purchase, because for lifecycle only need 2 of these) and visualize it with funnel chart
 
-````tiering = cek.groupby(['purchase_date', 'tier'])['customer_id'].nunique().reset_index(name='unique_customers')
-tiering = tiering.rename(columns={'tier':'desc'})
-purchase_first = cek[cek['first_purchase'] == 'yes'].groupby('purchase_date')['customer_id'].nunique().reset_index(name='unique_customers')
-purchase_first['desc'] = 'First Purchase'
-purchase_second = cek[cek['second_purchase'] == 'yes'].groupby('purchase_date')['customer_id'].nunique().reset_index(name='unique_customers')
-purchase_second['desc'] = 'Second Purchase'
-purchase = pd.concat([purchase_first, purchase_second, tiering])
-purchase = purchase.rename(columns={'purchase_date':'date'})
-purchase = purchase[purchase['desc']!='No Tier']
+````leads = df_leads.groupby('lead_date')['customer_id'].nunique().sum()
+df_leads_total = pd.DataFrame({'desc': ['Leads'], 'unique_customers': [leads]})
 
-leads = df_leads.groupby('lead_date')['customer_id'].nunique().reset_index(name='unique_customers')
-leads['desc'] = 'Leads'
-leads = leads.rename(columns={'lead_date':'date'})
-lifecycle = pd.concat([purchase, leads])
+first_purchase = cek[cek['first_purchase'] == 'yes']['customer_id'].nunique()
+df_first_purchase = pd.DataFrame({'desc': ['First Purchase'], 'unique_customers': [first_purchase]})
+second_purchase = cek[cek['second_purchase'] == 'yes']['customer_id'].nunique()
+df_second_purchase = pd.DataFrame({'desc': ['Second Purchase'], 'unique_customers': [second_purchase]})
+
+tiering = cek[cek['tier'] != 'No Tier'].groupby('tier')['customer_id'].nunique().reset_index()
+tiering = tiering.rename(columns={'tier': 'desc', 'customer_id': 'unique_customers'})
+lifecycle_total = pd.concat([df_leads_total, df_first_purchase, df_second_purchase, tiering])
+
 mapping = {
-    'Leads': '1',
-    'First Purchase': '2',
-    'Second Purchase': '3',
-    'Tier 1': '4',
-    'Tier 2': '5',
-    'Tier 3': '6',
-    'Power User': '7'
+    'Leads': 1,
+    'First Purchase': 2,
+    'Second Purchase': 3,
+    'Tier 1': 4,
+    'Tier 2': 5,
+    'Tier 3': 6,
+    'Power User': 7
 }
+lifecycle_total['sorted_by'] = lifecycle_total['desc'].map(mapping)
+lifecycle_total = lifecycle_total.sort_values('sorted_by').reset_index(drop=True)
 
-lifecycle['sorted_by'] = lifecycle['desc'].map(mapping)
-lifecycle = lifecycle.reset_index()
-lifecycle
+lifecycle_total
 
 ````
 
 and the result must be like this
 
-|  | date       | unique_customers | desc           | sorted_by |
-|-------|------------|------------------|----------------|-----------|
-| 0     | 2024-01-01 | 2556             | First Purchase | 2         |
-| 1     | 2024-01-02 | 1520             | First Purchase | 2         |
-| 2     | 2024-01-03 | 2055             | First Purchase | 2         |
-| 3     | 2024-01-04 | 1501             | First Purchase | 2         |
-| 4     | 2024-01-05 | 1675             | First Purchase | 2         |
-| ...   | ...        | ...              | ...            | ...       |
-| 2180  | 2024-12-27 | 2208             | Leads          | 1         |
-| 2181  | 2024-12-28 | 2411             | Leads          | 1         |
-| 2182  | 2024-12-29 | 2365             | Leads          | 1         |
-| 2183  | 2024-12-30 | 1958             | Leads          | 1         |
-| 2184  | 2024-12-31 | 2441             | Leads          | 1         |
+| desc            | unique_customers | sorted_by |
+|-----------------|------------------|-----------|
+| Leads           | 985,858          | 1         |
+| First Purchase  | 629,389          | 2         |
+| Second Purchase | 377,702          | 3         |
+| Tier 1          | 206,636          | 4         |
+| Tier 2          | 100,726          | 5         |
+| Tier 3          | 49,896           | 6         |
+| Power User      | 1,839            | 7         |
 
 
 
