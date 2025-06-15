@@ -149,6 +149,7 @@ and the result will be like this
 
 
 <div style="font-size: 10px">
+    
 | transaction_id | purchase_date | customer_id | total  | amount  | purchase_order | first_purchase | retention | gap_days_since_first | second_purchase |
 |----------------|---------------|-------------|--------|---------|----------------|----------------|-----------|----------------------|-----------------|
 | TXN0000001     | 2024-01-01    | CUST0000016 | 466.90 | 538.54  | 1              | yes            |           | 0                    |                 |
@@ -212,6 +213,7 @@ I applied fillna() to anticipate cases where customers don’t have any purchase
 
 
 <div style="font-size: 10px">
+    
 | transaction_id | purchase_date | customer_id | total  | amount  | purchase_order | first_purchase | retention | gap_days_since_first | second_purchase | tier    |
 |----------------|---------------|-------------|--------|---------|----------------|----------------|-----------|----------------------|-----------------|---------|
 | TXN0000001     | 2024-01-01    | CUST0000016 | 466.90 | 538.54  | 1              | yes            |           | 0                    |                 | No Tier |
@@ -266,7 +268,7 @@ lifecycle_total
 and the result must be like this
 <br />
 
-<table style="font-size:12px;">
+<table style="font-size:10px;">
   <thead>
     <tr>
       <th>desc</th>
