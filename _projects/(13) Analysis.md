@@ -1,5 +1,5 @@
 ---
-name: Analysis That I Did when Being Data Analyst of Sinergi Group
+name: Data Analysis of Sinergi Group
 tools: [Python, PostgreSQL]
 image: https://i.ibb.co.com/3dq0JYN/Screenshot-2024-11-05-132131.png
 description: The data I used for this portfolio is dummy data.
