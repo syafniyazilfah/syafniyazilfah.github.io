@@ -241,15 +241,25 @@ lifecycle_total
 
 and the result must be like this
 
-| desc            | unique_customers | sorted_by |
-|-----------------|------------------|-----------|
-| Leads           | 985,858          | 1         |
-| First Purchase  | 629,389          | 2         |
-| Second Purchase | 377,702          | 3         |
-| Tier 1          | 206,636          | 4         |
-| Tier 2          | 100,726          | 5         |
-| Tier 3          | 49,896           | 6         |
-| Power User      | 1,839            | 7         |
+<table style="font-size:12px;">
+  <thead>
+    <tr>
+      <th>desc</th>
+      <th>unique_customers</th>
+      <th>sorted_by</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Leads</td><td>985,858</td><td>1</td></tr>
+    <tr><td>First Purchase</td><td>629,389</td><td>2</td></tr>
+    <tr><td>Second Purchase</td><td>377,702</td><td>3</td></tr>
+    <tr><td>Tier 1</td><td>206,636</td><td>4</td></tr>
+    <tr><td>Tier 2</td><td>100,726</td><td>5</td></tr>
+    <tr><td>Tier 3</td><td>49,896</td><td>6</td></tr>
+    <tr><td>Power User</td><td>1,839</td><td>7</td></tr>
+  </tbody>
+</table>
+
 
 
 
