@@ -1,22 +1,18 @@
 - name: Tableau
   percentage: 40
   color: success
-
-- name: Figma
+  
+- name: Metabase
   percentage: 40
   color: info
-  
-- name: Adobe Illustrator
-  percentage: 60
-  color: warning
 
 - name: Looker Studio
-  percentage: 60
+  percentage: 70
   color: blue
 
 - name: Power BI
-  percentage: 30
-  color: danger
+  percentage: 35
+  color: warning
 
 - name: Clip Studio Paint
   percentage: 40
