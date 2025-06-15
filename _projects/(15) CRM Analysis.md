@@ -11,7 +11,8 @@ In this dataset, whenever a customer clicks on an ad, they are counted as a lead
 
 Therefore, it's necessary to generate dummy data consisting of ads data, leads data, and purchase data to perform this analysis.
 
-````import pandas as pd
+````
+import pandas as pd
 import numpy as np
 
 np.random.seed(42)
@@ -111,13 +112,13 @@ df_purchase = pd.DataFrame(purchase_records, columns=[
     'transaction_id', 'purchase_date', 'customer_id', 'sku', 'price', 'qty'
 ])
 
-
 ````
 
 
 After generating the data, I need to calculate the total purchase amount per customer, label whether a transaction is a first purchase, identify retention by checking for repeat purchases, and also flag second purchases if they occur within 45 days of the first purchase.
 
-````uniquetx = cek[['customer_id', 'purchase_date', 'transaction_id']].drop_duplicates().sort_values(['customer_id', 'purchase_date', 'transaction_id'])
+````
+uniquetx = cek[['customer_id', 'purchase_date', 'transaction_id']].drop_duplicates().sort_values(['customer_id', 'purchase_date', 'transaction_id'])
 uniquetx['purchase_order'] = uniquetx.groupby('customer_id').cumcount() + 1
 
 
@@ -164,7 +165,8 @@ Tier 1: At least 1 purchase in the last 6 months, but total purchases under 550 
 This segmentation helps in identifying high-value customers for targeted marketing and retention strategies.
 
 
-````cutoff_date = pd.to_datetime('2024-12-31') - pd.DateOffset(months=6)
+````
+cutoff_date = pd.to_datetime('2024-12-31') - pd.DateOffset(months=6)
 recent_purchase = cek[cek['purchase_date'] >= cutoff_date]
 
 customer_cltv = recent_purchase.groupby('customer_id').agg(
@@ -208,7 +210,8 @@ I applied fillna() to anticipate cases where customers don’t have any purchase
 
 But how do i know the conversion from ads to leads to purchase? I need to merge 2 tables (leads, and purchase, because for lifecycle only need 2 of these) and visualize it with funnel chart
 
-````leads = df_leads.groupby('lead_date')['customer_id'].nunique().sum()
+````
+leads = df_leads.groupby('lead_date')['customer_id'].nunique().sum()
 df_leads_total = pd.DataFrame({'desc': ['Leads'], 'unique_customers': [leads]})
 
 first_purchase = cek[cek['first_purchase'] == 'yes']['customer_id'].nunique()
@@ -252,7 +255,8 @@ and the result must be like this
 
 and now funnel left
 
-````import plotly.express as px
+````
+import plotly.express as px
 
 lifecycle_total = lifecycle_total.sort_values('sorted_by').reset_index(drop=True)
 
