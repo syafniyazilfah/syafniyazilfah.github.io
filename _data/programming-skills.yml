@@ -1,11 +1,11 @@
 - name: SQL
-  percentage: 50
+  percentage: 65
   color: secondary
 
 - name: Phyton
-  percentage: 60
+  percentage: 68
   color: info
   
 - name: R
-  percentage: 50
+  percentage: 35
   color: danger
