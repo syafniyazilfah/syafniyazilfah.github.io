@@ -148,21 +148,38 @@ and the result will be like this
 <br />
 
 
-<div style="font-size: 10px">
-    
-| transaction_id | purchase_date | customer_id | total  | amount  | purchase_order | first_purchase | retention | gap_days_since_first | second_purchase |
-|----------------|---------------|-------------|--------|---------|----------------|----------------|-----------|----------------------|-----------------|
-| TXN0000001     | 2024-01-01    | CUST0000016 | 466.90 | 538.54  | 1              | yes            |           | 0                    |                 |
-| TXN0001878     | 2024-01-01    | CUST0001746 | 98.37  | 98.37   | 1              | yes            |           | 0                    |                 |
-| TXN0001880     | 2024-01-01    | CUST0001696 | 148.38 | 148.38  | 1              | yes            |           | 0                    |                 |
-| TXN0001882     | 2024-01-01    | CUST0001671 | 418.27 | 866.80  | 1              | yes            |           | 0                    |                 |
-| TXN0001884     | 2024-01-01    | CUST0001677 | 303.46 | 500.86  | 1              | yes            |           | 0                    |                 |
-| ...            | ...           | ...         | ...    | ...     | ...            | ...            | ...       | ...                  | ...             |
-| TXN1065894     | 2024-12-31    | CUST0927262 | 434.93 | 1634.36 | 2              |                | yes       | 21                   | yes             |
-| TXN0871594     | 2024-12-31    | CUST0758628 | 330.17 | 330.17  | 3              |                | yes       | 85                   |                 |
-| TXN0936038     | 2024-12-31    | CUST0814528 | 495.26 | 495.26  | 3              |                | yes       | 65                   |                 |
-| TXN0871616     | 2024-12-31    | CUST0758551 | 337.68 | 337.68  | 3              |                | yes       | 85                   |                 |
-| TXN1132881     | 2024-12-31    | CUST0985650 | 460.04 | 460.04  | 1              | yes            |           | 0                    |                 |
+<div style="font-size:10px; overflow-x:auto;">
+<table border="1" cellspacing="0" cellpadding="4">
+<thead>
+<tr>
+<th>transaction_id</th>
+<th>purchase_date</th>
+<th>customer_id</th>
+<th>total</th>
+<th>amount</th>
+<th>purchase_order</th>
+<th>first_purchase</th>
+<th>retention</th>
+<th>gap_days_since_first</th>
+<th>second_purchase</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>TXN0000001</td><td>2024-01-01</td><td>CUST0000016</td><td>466.90</td><td>538.54</td><td>1</td><td>yes</td><td></td><td>0</td><td></td></tr>
+<tr><td>TXN0001878</td><td>2024-01-01</td><td>CUST0001746</td><td>98.37</td><td>98.37</td><td>1</td><td>yes</td><td></td><td>0</td><td></td></tr>
+<tr><td>TXN0001880</td><td>2024-01-01</td><td>CUST0001696</td><td>148.38</td><td>148.38</td><td>1</td><td>yes</td><td></td><td>0</td><td></td></tr>
+<tr><td>TXN0001882</td><td>2024-01-01</td><td>CUST0001671</td><td>418.27</td><td>866.80</td><td>1</td><td>yes</td><td></td><td>0</td><td></td></tr>
+<tr><td>TXN0001884</td><td>2024-01-01</td><td>CUST0001677</td><td>303.46</td><td>500.86</td><td>1</td><td>yes</td><td></td><td>0</td><td></td></tr>
+<tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td>TXN1065894</td><td>2024-12-31</td><td>CUST0927262</td><td>434.93</td><td>1634.36</td><td>2</td><td></td><td>yes</td><td>21</td><td>yes</td></tr>
+<tr><td>TXN0871594</td><td>2024-12-31</td><td>CUST0758628</td><td>330.17</td><td>330.17</td><td>3</td><td></td><td>yes</td><td>85</td><td></td></tr>
+<tr><td>TXN0936038</td><td>2024-12-31</td><td>CUST0814528</td><td>495.26</td><td>495.26</td><td>3</td><td></td><td>yes</td><td>65</td><td></td></tr>
+<tr><td>TXN0871616</td><td>2024-12-31</td><td>CUST0758551</td><td>337.68</td><td>337.68</td><td>3</td><td></td><td>yes</td><td>85</td><td></td></tr>
+<tr><td>TXN1132881</td><td>2024-12-31</td><td>CUST0985650</td><td>460.04</td><td>460.04</td><td>1</td><td>yes</td><td></td><td>0</td><td></td></tr>
+</tbody>
+</table>
+</div>
+
 
 <br /><br />
 
@@ -212,21 +229,39 @@ I applied fillna() to anticipate cases where customers don’t have any purchase
 <br />
 
 
-<div style="font-size: 10px">
-    
-| transaction_id | purchase_date | customer_id | total  | amount  | purchase_order | first_purchase | retention | gap_days_since_first | second_purchase | tier    |
-|----------------|---------------|-------------|--------|---------|----------------|----------------|-----------|----------------------|-----------------|---------|
-| TXN0000001     | 2024-01-01    | CUST0000016 | 466.90 | 538.54  | 1              | yes            |           | 0                    |                 | No Tier |
-| TXN0001878     | 2024-01-01    | CUST0001746 | 98.37  | 98.37   | 1              | yes            |           | 0                    |                 | No Tier |
-| TXN0001880     | 2024-01-01    | CUST0001696 | 148.38 | 148.38  | 1              | yes            |           | 0                    |                 | No Tier |
-| TXN0001882     | 2024-01-01    | CUST0001671 | 418.27 | 866.80  | 1              | yes            |           | 0                    |                 | No Tier |
-| TXN0001884     | 2024-01-01    | CUST0001677 | 303.46 | 500.86  | 1              | yes            |           | 0                    |                 | No Tier |
-| ...            | ...           | ...         | ...    | ...     | ...            | ...            | ...       | ...                  | ...             | ...     |
-| TXN1065894     | 2024-12-31    | CUST0927262 | 434.93 | 1634.36 | 2              |                | yes       | 21                   | yes             | Tier 2  |
-| TXN0871594     | 2024-12-31    | CUST0758628 | 330.17 | 330.17  | 3              |                | yes       | 85                   |                 | Tier 3  |
-| TXN0936038     | 2024-12-31    | CUST0814528 | 495.26 | 495.26  | 3              |                | yes       | 65                   |                 | Tier 2  |
-| TXN0871616     | 2024-12-31    | CUST0758551 | 337.68 | 337.68  | 3              |                | yes       | 85                   |                 | Tier 3  |
-| TXN1132881     | 2024-12-31    | CUST0985650 | 460.04 | 460.04  | 1              | yes            |           | 0                    |                 | Tier 1  |
+<div style="font-size:10px; overflow-x:auto;">
+<table border="1" cellspacing="0" cellpadding="4">
+<thead>
+<tr>
+<th>transaction_id</th>
+<th>purchase_date</th>
+<th>customer_id</th>
+<th>total</th>
+<th>amount</th>
+<th>purchase_order</th>
+<th>first_purchase</th>
+<th>retention</th>
+<th>gap_days_since_first</th>
+<th>second_purchase</th>
+<th>tier</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>TXN0000001</td><td>2024-01-01</td><td>CUST0000016</td><td>466.90</td><td>538.54</td><td>1</td><td>yes</td><td></td><td>0</td><td></td><td>No Tier</td></tr>
+<tr><td>TXN0001878</td><td>2024-01-01</td><td>CUST0001746</td><td>98.37</td><td>98.37</td><td>1</td><td>yes</td><td></td><td>0</td><td></td><td>No Tier</td></tr>
+<tr><td>TXN0001880</td><td>2024-01-01</td><td>CUST0001696</td><td>148.38</td><td>148.38</td><td>1</td><td>yes</td><td></td><td>0</td><td></td><td>No Tier</td></tr>
+<tr><td>TXN0001882</td><td>2024-01-01</td><td>CUST0001671</td><td>418.27</td><td>866.80</td><td>1</td><td>yes</td><td></td><td>0</td><td></td><td>No Tier</td></tr>
+<tr><td>TXN0001884</td><td>2024-01-01</td><td>CUST0001677</td><td>303.46</td><td>500.86</td><td>1</td><td>yes</td><td></td><td>0</td><td></td><td>No Tier</td></tr>
+<tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+<tr><td>TXN1065894</td><td>2024-12-31</td><td>CUST0927262</td><td>434.93</td><td>1634.36</td><td>2</td><td></td><td>yes</td><td>21</td><td>yes</td><td>Tier 2</td></tr>
+<tr><td>TXN0871594</td><td>2024-12-31</td><td>CUST0758628</td><td>330.17</td><td>330.17</td><td>3</td><td></td><td>yes</td><td>85</td><td></td><td>Tier 3</td></tr>
+<tr><td>TXN0936038</td><td>2024-12-31</td><td>CUST0814528</td><td>495.26</td><td>495.26</td><td>3</td><td></td><td>yes</td><td>65</td><td></td><td>Tier 2</td></tr>
+<tr><td>TXN0871616</td><td>2024-12-31</td><td>CUST0758551</td><td>337.68</td><td>337.68</td><td>3</td><td></td><td>yes</td><td>85</td><td></td><td>Tier 3</td></tr>
+<tr><td>TXN1132881</td><td>2024-12-31</td><td>CUST0985650</td><td>460.04</td><td>460.04</td><td>1</td><td>yes</td><td></td><td>0</td><td></td><td>Tier 1</td></tr>
+</tbody>
+</table>
+</div>
+
 
     
 
@@ -322,7 +357,6 @@ fig.show()
 ````
 
 
-<br />
 
 and i got this
 
