@@ -10,7 +10,7 @@
                  This integration included extracting essential details such as factory names, product quantities, product types, and purchase order numbers, ensuring the purchasing team had accurate and actionable data.
                 <br><br> Moreover, I developed a B2B sales forecasting model using ARIMA with Python, as Looker Studio lacks built-in forecasting features. This model enabled the sales manager to plan and implement strategies for meeting sales targets more effectively by anticipating future sales trends.
                 <br><br> Additionally, I built a Looker Studio dashboard for keyword insights from TikTok, which provided the marketing team with valuable keywords to attract buyers. The data was sourced from TikTok ads, identifying those most relevant to the company’s products.
-                <br> Since a new division, CRM, was established, I was transferred to that team to build the necessary data infrastructure, including AOV, GMV, CLTV, and CRM Lifecycle funnels. With the introduction of CRM, we also began the process of migrating data and visualizations to Metabase.
+                <br><br> Since a new division, CRM, was established, I was transferred to that team to build the necessary data infrastructure, including AOV, GMV, CLTV, and CRM Lifecycle funnels. With the introduction of CRM, we also began the process of migrating data and visualizations to Metabase.
                 <br> 
                 <br><br> Due to the lack of an integrated database system at the company, I also ensured daily, weekly, and monthly updates to various dashboards, maintaining data accuracy and supporting decision-making across different departments.
 
