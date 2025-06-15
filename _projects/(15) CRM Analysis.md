@@ -1,6 +1,6 @@
 ---
 name: CRM Analysis
-tools: [SQL, Power Bi]
+tools: [Python]
 image: https://ik.imagekit.io/syafniya/newplot%20(2).png?updatedAt=1749955981244
 description: Analysis that i did in my company before but with generated data by python
 ---
@@ -140,6 +140,8 @@ uniquetx['second_purchase'] = np.where(
 
 and the result will be like this
 
+
+<div style="font-size: 10px">
 | transaction_id | purchase_date | customer_id | total  | amount  | purchase_order | first_purchase | retention | gap_days_since_first | second_purchase |
 |----------------|---------------|-------------|--------|---------|----------------|----------------|-----------|----------------------|-----------------|
 | TXN0000001     | 2024-01-01    | CUST0000016 | 466.90 | 538.54  | 1              | yes            |           | 0                    |                 |
@@ -194,6 +196,8 @@ cek['tier'] = cek['tier'].fillna('No Tier')
 
 I applied fillna() to anticipate cases where customers don’t have any purchases within the last 6 months. This ensures that these customers are still included in the dataset with a default tier label (e.g., 'No Tier'), making it easier to differentiate active from inactive customers during analysis. The result will be like this.
 
+
+<div style="font-size: 10px">
 | transaction_id | purchase_date | customer_id | total  | amount  | purchase_order | first_purchase | retention | gap_days_since_first | second_purchase | tier    |
 |----------------|---------------|-------------|--------|---------|----------------|----------------|-----------|----------------------|-----------------|---------|
 | TXN0000001     | 2024-01-01    | CUST0000016 | 466.90 | 538.54  | 1              | yes            |           | 0                    |                 | No Tier |
