@@ -1,9 +1,11 @@
 ---
-name: Analysis That I Did using Job AI from Kaggle
+name: Analysis Job AI Dataset in Job Vacancy
 tools: [SQL, Power Bi]
 image: https://ik.imagekit.io/syafniya/job_ai%204.png?updatedAt=1749818543007
 description: The data I used for this portfolio is data from Kaggle.
 ---
+
+**Source Data:** [Global AI Job Market and Salary Trends 2025 - Kaggle](https://www.kaggle.com/datasets/bismasajjad/global-ai-job-market-and-salary-trends-2025)
 
 
 ### Cleaning data from raw data with query using MYSQL Workbench
