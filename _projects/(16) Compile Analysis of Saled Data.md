@@ -1,7 +1,7 @@
 ---
 name: Analysis of Sales Data
 tools: [Python]
-image: https://ik.imagekit.io/syafniya/job_ai%204.png?updatedAt=1749818543007
+image: 
 description: The data I used for this portfolio is from generated data using python
 ---
 
