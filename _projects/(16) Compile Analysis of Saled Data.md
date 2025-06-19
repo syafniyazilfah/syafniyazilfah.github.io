@@ -68,10 +68,149 @@ and this is the Sales Data
 
 From 3 tables generated, i want to make few analysis based on them, the analysis that i want to do are :
 1. Descriptive Analysis
-2. Cohort Analysis
+2. Churn Analysis
 3. RFM
 4. ARIMA
 5. Behaviour Funnel
 
 
-### 1. Descriptive Analysis
+### **1. Descriptive Analysis**
+````
+Total Impressions: 18235179
+Total Clicks: 985858
+Total Spend: 1796318.45
+Total Unique Leads: 985858
+Total Unique Purchases (transactions): 1132881
+Total Revenue: 506630165.74
+Overall Conversion Rate (purchases/leads): 114.91%
+Average CPL: 1.82
+````
+
+The descriptive analysis indicates the presence of repeat purchases. This is reflected in the overall conversion rate of 114.91%, meaning there are approximately 15% more transactions than leads. In other words, for every 100 leads acquired, there are an average of 115 transactions, suggesting that some leads made multiple purchases.
+
+### **2. Churn Analysis**
+
+To perform Churn Analysis, I need to set a benchmark to determine when a customer is considered churned. I decided to define churn as having a last purchase **more than 90 days ago**.
+
+````
+reference_date = df_purchase['purchase_date'].max()
+
+last_purchase = df_purchase.groupby('customer_id')['purchase_date'].max().reset_index()
+
+churn_threshold = reference_date - timedelta(days=90)
+last_purchase['churn'] = last_purchase['purchase_date'] < churn_threshold
+````
+
+The result obtained from the code is attached below.
+![](https://ik.imagekit.io/syafniya/churn.png?updatedAt=1750292163344)
+
+Out of ````629,389 unique purchasing customers````, 63.4% have churned, which means the number of churned customers is approximately 1.5 times greater than active customers.
+
+To prevent further churn, especially within the 90-day window, we recommend regular retention initiatives, such as special events during payday or exclusive promotions (e.g., Black Market sales) at least once a month to recapture their attention.
+
+Before launching campaigns, conducting behavioral analysis or customer surveys on churned users is essential to better understand their preferences, ensuring that the campaign is relevant, personalized, and impactful.
+
+
+### **3. RFM**
+
+First of all, i need to make a measure of Recency, Frequency, and Monetary values of each customer. i choose maximum date of the data purchase became the comparation for the Recency value.
+
+
+````
+reference_date = df_purchase['purchase_date'].max()
+
+rfm = df_purchase.groupby('customer_id').agg({
+    'purchase_date': lambda x: (reference_date - x.max()).days,
+    'transaction_id': 'nunique',
+    'price': 'sum'
+}).rename(columns={'purchase_date': 'Recency', 'transaction_id': 'Frequency', 'price': 'Monetary'})
+
+````
+
+After got the Recency, Frequency, and Monetary values. I divided the Recency, Frequency, and Monetary values into 4 categories.
+
+````
+rfm['R_score'] = pd.qcut(rfm['Recency'], 4, labels=[4,3,2,1]).astype(int)
+
+try:
+    rfm['F_score'] = pd.qcut(rfm['Frequency'].rank(method='dense'), 4, labels=[1,2,3,4]).astype(int)
+except ValueError:
+    rfm['F_score'] = pd.cut(rfm['Frequency'], bins=4, labels=[1,2,3,4]).astype(int)
+
+try:
+    rfm['M_score'] = pd.qcut(rfm['Monetary'].rank(method='dense'), 4, labels=[1,2,3,4]).astype(int)
+except ValueError:
+    rfm['M_score'] = pd.cut(rfm['Monetary'], bins=4, labels=[1,2,3,4]).astype(int)
+
+rfm['RFM_Score'] = rfm['R_score'].astype(str) + rfm['F_score'].astype(str) + rfm['M_score'].astype(str)
+````
+
+The reason I applied ````pd.qcut```` directly on the Recency score is because Recency is a continuous variable with a wide range of values, making it suitable for quantile-based binning without additional processing.
+
+On the other hand, Frequency and Monetary scores are discrete variables. Frequency often has a relatively small set of possible values, and Monetary values can be highly skewed and unevenly distributed.
+
+Because of this, to effectively split Frequency and Monetary into 4 meaningful categories, I first applied ranking ````(rank())```` to transform their discrete or skewed distributions into a more continuous-like scale. Then, I applied ````pd.qcut```` on these ranked values to get balanced quartile bins.
+
+Then i need to make segmentation based on Recency, Frequency, and Monetary scores.
+
+````
+def segment_rfm(row):
+    if row['RFM_Score'] == '444':
+        return 'Champions'
+    elif row['R_score'] >= 3 and row['F_score'] >= 3:
+        return 'Loyal Customers'
+    elif row['R_score'] >= 3 and row['M_score'] >= 3:
+        return 'Big Spenders'
+    elif row['R_score'] == 4:
+        return 'Recent Customers'
+    elif row['F_score'] >= 3:
+        return 'Frequent Buyers'
+    else:
+        return 'At Risk'
+
+rfm['Segment'] = rfm.apply(segment_rfm, axis=1)
+
+````
+
+And the result of the segmentation attached below
+
+![](https://ik.imagekit.io/syafniya/pie%20chart%20RFM.png?updatedAt=1750290813133)
+
+54% of our customers fall into the At Risk segment, meaning more than half of our customer base is at risk of churning or has significantly reduced engagement. This is a critical warning sign that immediate retention efforts are necessary to prevent revenue loss.
+
+Recommendations:
+
+Personalized engagement: Reach out with surveys or request feedback to make these customers feel valued and heard.
+
+Targeted promotions: Offer incentives like discounts, vouchers, or free products to encourage reactivation.
+
+Loyalty programs: Develop reward systems or communities to strengthen customer attachment and long-term loyalty.
+
+For customers outside the At Risk segment:
+
+Upselling and cross-selling: Promote new products with attractive offers such as buy-one-get-one or free samples.
+
+Regular communication: Send relevant and engaging content tailored to their profile to maintain ongoing interest.
+
+
+### **4. ARIMA**
+
+### **5. Behaviour Funnel**
+
+I have data for behaviour funnel, using impressions, clicks, leads, and transaction
+
+````
+Impressions: 18235179
+Clicks: 985858 (CTR: 5.41%)
+Leads: 985858 (Lead Conversion: 100.00%)
+Purchases: 1132881 (Purchase Conversion: 114.91%)
+````
+
+and the funnel will show as this
+![](https://ik.imagekit.io/syafniya/newplot.png?updatedAt=1750291325204)
+
+The significant gap between impressions and clicks indicates an opportunity for improvement. To increase engagement, we should create more interactive ads that truly resonate with the audience—ads that reflect their interests and follow current trends.
+
+For example, if our product targets Gen Z, the ad content must align with trends popular among this group. Additionally, fine-tuning ad settings such as age, gender, and other demographics will help us reach the right customers more effectively.
+
+By tailoring both the creative content and the targeting settings, we can increase click-through rates and ultimately generate more leads.
