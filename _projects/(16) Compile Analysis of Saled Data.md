@@ -1,7 +1,7 @@
 ---
 name: Analysis of Sales Data
 tools: [Python]
-image: 
+image: https://ik.imagekit.io/syafniya/churn.png?updatedAt=1750292163344
 description: The data I used for this portfolio is from generated data using python
 ---
 
@@ -80,6 +80,7 @@ Total Impressions: 18235179
 Total Clicks: 985858
 Total Spend: 1796318.45
 Total Unique Leads: 985858
+Total unique customers purchase: 629389
 Total Unique Purchases (transactions): 1132881
 Total Revenue: 506630165.74
 Overall Conversion Rate (purchases/leads): 114.91%
