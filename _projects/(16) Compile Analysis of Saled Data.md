@@ -105,7 +105,7 @@ last_purchase['churn'] = last_purchase['purchase_date'] < churn_threshold
 The result obtained from the code is attached below.
 ![](https://ik.imagekit.io/syafniya/churn.png?updatedAt=1750292163344)
 
-Out of ````629,389 unique purchasing customers````, 63.4% have churned, which means the number of churned customers is approximately 1.5 times greater than active customers.
+Out of ````629,389 unique purchasing customers````, 63.4% have churned, which means the number of churned customers is approximately 2 times greater than active customers.
 
 To prevent further churn, especially within the 90-day window, we recommend regular retention initiatives, such as special events during payday or exclusive promotions (e.g., Black Market sales) at least once a month to recapture their attention.
 
