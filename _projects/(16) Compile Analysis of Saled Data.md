@@ -2,7 +2,7 @@
 name: Analysis of Sales Data
 tools: [Python]
 image: https://ik.imagekit.io/syafniya/churn.png?updatedAt=1750292163344
-description: The data I used for this portfolio is from generated data using python
+description: The data I used for this portfolio is from generated data using python with Churn. RFM, Behaviour Funnel, and ARIMA
 ---
 
 I was generated data of Ads Data, Leads Data, and Sales Data as below
@@ -195,6 +195,190 @@ Regular communication: Send relevant and engaging content tailored to their prof
 
 
 ### **4. ARIMA**
+
+The first step before processing data using the ARIMA method is to check the ADF test statistic and its p-value.
+
+This is important to determine whether the data is stationary or not. In my case, the data I am using consists of monthly clicks.
+
+````
+from statsmodels.tsa.arima.model import ARIMA
+from statsmodels.tsa.stattools import adfuller
+
+df_ads['lead_month'] = pd.to_datetime(df_ads['date']).dt.to_period('M')
+monthly_leads = df_ads.groupby('lead_month')['clicks'].sum()
+
+result = adfuller(monthly_leads)
+print('ADF Statistic:', result[0])
+print('p-value:', result[1])
+
+````
+
+The results of the ADF test statistic and p-value are as follows:
+
+````
+ADF Statistic: -3.383983092868024
+p-value: 0.011517156979879782
+````
+
+Since the p-value is less than 0.05, we can conclude that the data is already stationary. Therefore, no data transformation or differencing is needed.
+
+Next, because no differencing or transformation is performed, the next step is to analyze the ACF and PACF plots to determine the appropriate orders of the Moving Average (MA) and Auto-Regressive (AR) components.
+
+````
+from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
+import matplotlib.pyplot as plt
+
+fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+
+plot_acf(monthly_leads, ax=axes[0])
+axes[0].set_title('ACF')
+
+plot_pacf(monthly_leads, ax=axes[1])
+axes[1].set_title('PACF')
+
+plt.show()
+
+````
+
+The code produced the following ACF and PACF plots:
+
+![](https://ik.imagekit.io/syafniya/ACF%20PACF.png?updatedAt=1750377911596)
+
+From the plots, it can be seen that both the ACF and PACF show a sharp decline after lag 0. Therefore, the possible ARIMA models could be ARIMA(0,0,0), ARIMA(1,0,0), ARIMA(0,0,1), or ARIMA(1,0,1).
+
+Since several ARIMA models have been tested, the next step is to perform ARIMA analysis to determine the most suitable model.
+
+This involves evaluating the models based on statistical metrics such as AIC, BIC, and residual diagnostics, in order to select the model that best fits the data.
+
+##### ARIMA(0,0,0) Model Summary
+
+| **Metric**               | **Value**       |
+|--------------------------|-----------------|
+| **Dependent Variable**   | clicks          |
+| **Number of Observations** | 12              |
+| **Model**                | ARIMA(0,0,0)    |
+| **Log Likelihood**       | -115.750        |
+| **AIC**                  | 235.501         |
+| **BIC**                  | 236.471         |
+| **HQIC**                 | 235.142         |
+
+###### Coefficients
+
+| **Variable** | **Coef**  | **Std Err** | **z**    | **P>|z|** | **[0.025** | **0.975]**  |
+|--------------|-----------|-------------|----------|---------|------------|------------|
+| const        | 82,150    | 1360.369    | 60.392   | 0.000   | 79,500     | 84,800     |
+| sigma²       | 14,220,000| 8,760,000   | 1.624    | 0.104   | -2,940,000 | 31,400,000 |
+
+###### Residual Diagnostics
+
+| **Test**                 | **Value** | **Prob.** |
+|--------------------------|-----------|-----------|
+| Ljung-Box (L1) (Q)       | 0.20      | 0.66      |
+| Jarque-Bera (JB)         | 1.16      | 0.56      |
+| Heteroskedasticity (H)   | 0.25      | 0.21      |
+| Skewness                 | 0.70      | -         |
+| Kurtosis                 | 2.39      | -         |
+
+
+
+##### ARIMA(1,0,0) Model Summary
+
+| **Metric**               | **Value**       |
+|--------------------------|-----------------|
+| **Dependent Variable**   | clicks          |
+| **Number of Observations** | 12              |
+| **Model**                | ARIMA(1,0,0)    |
+| **Log Likelihood**       | -115.687        |
+| **AIC**                  | 237.374         |
+| **BIC**                  | 238.829         |
+| **HQIC**                 | 236.835         |
+
+###### Coefficients
+
+| **Variable** | **Coef**  | **Std Err** | **z**     | **P>|z|** | **[0.025** | **0.975]**  |
+|--------------|-----------|-------------|-----------|---------|------------|------------|
+| const        | 82,150    | 1036.453    | 79.265    | 0.000   | 80,100     | 84,200     |
+| ar.L1        | -0.1076   | 0.257       | -0.418    | 0.676   | -0.612     | 0.397      |
+| sigma²       | 14,680,000| 77,000      | 1.91e+08  | 0.000   | 14,700,000 | 14,700,000 |
+
+###### Residual Diagnostics
+
+| **Test**                 | **Value** | **Prob.** |
+|--------------------------|-----------|-----------|
+| Ljung-Box (L1) (Q)       | 0.04      | 0.84      |
+| Jarque-Bera (JB)         | 1.12      | 0.57      |
+| Heteroskedasticity (H)   | 0.22      | 0.17      |
+| Skewness                 | 0.65      | -         |
+| Kurtosis                 | 2.26      | -         |
+
+
+##### ARIMA(0,0,1) Model Summary
+
+| **Metric**               | **Value**       |
+|--------------------------|-----------------|
+| **Dependent Variable**   | clicks          |
+| **Number of Observations** | 12              |
+| **Model**                | ARIMA(0,0,1)    |
+| **Log Likelihood**       | -114.933        |
+| **AIC**                  | 235.865         |
+| **BIC**                  | 237.320         |
+| **HQIC**                 | 235.327         |
+
+###### Coefficients
+
+| **Variable** | **Coef**  | **Std Err** | **z**     | **P>|z|** | **[0.025** | **0.975]**  |
+|--------------|-----------|-------------|-----------|---------|------------|------------|
+| const        | 82,400    | 281.658     | 292.560   | 0.000   | 81,800     | 83,000     |
+| ma.L1        | -0.9976   | 0.509       | -1.960    | 0.050   | -1.995     | ≈0         |
+| sigma²       | 9,616,000 | ≈0          | 7.31e+10  | 0.000   | 9,620,000  | 9,620,000  |
+
+###### Residual Diagnostics
+
+| **Test**                 | **Value** | **Prob.** |
+|--------------------------|-----------|-----------|
+| Ljung-Box (L1) (Q)       | 1.17      | 0.28      |
+| Jarque-Bera (JB)         | 0.26      | 0.88      |
+| Heteroskedasticity (H)   | 0.33      | 0.31      |
+| Skewness                 | 0.01      | -         |
+| Kurtosis                 | 2.28      | -         |
+
+
+##### ARIMA(1,0,1) Model Summary
+
+| **Metric**               | **Value**       |
+|--------------------------|-----------------|
+| **Dependent Variable**   | clicks          |
+| **Number of Observations** | 12              |
+| **Model**                | ARIMA(1,0,1)    |
+| **Log Likelihood**       | -114.211        |
+| **AIC**                  | 236.421         |
+| **BIC**                  | 238.361         |
+| **HQIC**                 | 235.703         |
+
+###### Coefficients
+
+| **Variable** | **Coef**  | **Std Err** | **z**     | **P>|z|** | **[0.025** | **0.975]**  |
+|--------------|-----------|-------------|-----------|---------|------------|------------|
+| const        | 82,340    | 405.650     | 202.994   | 0.000   | 81,500     | 83,100     |
+| ar.L1        | 0.3605    | 0.298       | 1.209     | 0.227   | -0.224     | 0.945      |
+| ma.L1        | -1.0000   | 0.656       | -1.524    | 0.128   | -2.286     | 0.286      |
+| sigma²       | 9,245,000 | ≈0          | 1.3e+14   | 0.000   | 9,250,000  | 9,250,000  |
+
+###### Residual Diagnostics
+
+| **Test**                 | **Value** | **Prob.** |
+|--------------------------|-----------|-----------|
+| Ljung-Box (L1) (Q)       | 0.09      | 0.77      |
+| Jarque-Bera (JB)         | 0.71      | 0.70      |
+| Heteroskedasticity (H)   | 0.27      | 0.23      |
+| Skewness                 | 0.14      | -         |
+| Kurtosis                 | 1.84      | -         |
+
+
+From the four models, the best model is ARIMA(0,0,0), as indicated by the lowest AIC value, the lowest BIC value, and the log likelihood value closest to zero compared to the other models.
+
+However, the drawback of this model compared to others lies in its relatively large sigma² value. Since sigma² only affects the variability of the forecasted results, the weakness of ARIMA(0,0,0) is that its predictions tend to be less stable. Nevertheless, its advantages in terms of AIC, BIC, and Log Likelihood make ARIMA(0,0,0) superior to the other models.
+
 
 ### **5. Behaviour Funnel**
 
