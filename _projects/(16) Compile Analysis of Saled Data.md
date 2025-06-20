@@ -2,7 +2,7 @@
 name: Analysis of Sales Data
 tools: [Python]
 image: https://ik.imagekit.io/syafniya/churn.png?updatedAt=1750292163344
-description: The data I used for this portfolio is from generated data using python with Descreptive, Churn, RFM, ARIMA, and Behaviour Funnel
+description: The data I used for this portfolio is from generated data using python and processing into Descreptive, Churn, RFM, ARIMA, and Behaviour Funnel Analysis
 ---
 
 I was generated data of Ads Data, Leads Data, and Sales Data as below
