@@ -23,7 +23,8 @@ this is the Ads Data result of the generated
     | Facebook_Camp1| Facebook | 2024-12-31 | 1477        | 122    | 569.51 | 122   | 4.67 | 78          |
     | Facebook_Camp2| Facebook | 2024-12-31 | 3198        | 200    | 248.76 | 200   | 1.24 | 128         |
     | Facebook_Camp3| Facebook | 2024-12-31 | 5679        | 291    | 440.48 | 291   | 1.51 | 186         |
-</small>
+    
+    </small>
 
 
 this is the Leads Data result of the generated
@@ -41,8 +42,9 @@ this is the Leads Data result of the generated
     | 2024-12-31  | CUST0985855  | SKU010       | Facebook_Camp3 | Facebook |
     | 2024-12-31  | CUST0985856  | SKU004       | Facebook_Camp3 | Facebook |
     | 2024-12-31  | CUST0985857  | SKU005       | Facebook_Camp3 | Facebook |
-    | 2024-12-31  | CUST0985858  | SKU006       | Facebook_Camp3 | Facebook |
-</small>
+    | 2024-12-31  | CUST0985858  | SKU006       | Facebook_Camp3 | Facebook | 
+    
+    </small>
 
 
 and this is the Sales Data
@@ -60,8 +62,9 @@ and this is the Sales Data
     | TXN1132879     | 2024-12-31    | CUST0985722  | SKU008 | 198.79 | 1   |
     | TXN1132879     | 2024-12-31    | CUST0985722  | SKU010 | 312.23 | 1   |
     | TXN1132880     | 2024-12-31    | CUST0985722  | SKU003 | 305.59 | 1   |
-    | TXN1132881     | 2024-12-31    | CUST0985650  | SKU003 | 460.04 | 1   |
-</small>
+    | TXN1132881     | 2024-12-31    | CUST0985650  | SKU003 | 460.04 | 1   | 
+    
+    </small>
 
 
 From 3 tables generated, i want to make few analysis based on them, the analysis that i want to do are :
