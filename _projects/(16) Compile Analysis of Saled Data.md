@@ -262,12 +262,16 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 | **BIC**                  | 236.471         |
 | **HQIC**                 | 235.142         |
 
+
+
 ###### Coefficients
 
 | **Variable** | **Coef**  | **Std Err** | **z**    | **P>|z|** | **[0.025** | **0.975]**  |
 |--------------|-----------|-------------|----------|---------|------------|------------|
 | const        | 82,150    | 1360.369    | 60.392   | 0.000   | 79,500     | 84,800     |
 | sigma²       | 14,220,000| 8,760,000   | 1.624    | 0.104   | -2,940,000 | 31,400,000 |
+
+
 
 ###### Residual Diagnostics
 
@@ -278,7 +282,6 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 | Heteroskedasticity (H)   | 0.25      | 0.21      |
 | Skewness                 | 0.70      | -         |
 | Kurtosis                 | 2.39      | -         |
-
 
 
 ##### ARIMA(1,0,0) Model Summary
@@ -293,6 +296,7 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 | **BIC**                  | 238.829         |
 | **HQIC**                 | 236.835         |
 
+
 ###### Coefficients
 
 | **Variable** | **Coef**  | **Std Err** | **z**     | **P>|z|** | **[0.025** | **0.975]**  |
@@ -300,6 +304,8 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 | const        | 82,150    | 1036.453    | 79.265    | 0.000   | 80,100     | 84,200     |
 | ar.L1        | -0.1076   | 0.257       | -0.418    | 0.676   | -0.612     | 0.397      |
 | sigma²       | 14,680,000| 77,000      | 1.91e+08  | 0.000   | 14,700,000 | 14,700,000 |
+
+
 
 ###### Residual Diagnostics
 
@@ -310,6 +316,7 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 | Heteroskedasticity (H)   | 0.22      | 0.17      |
 | Skewness                 | 0.65      | -         |
 | Kurtosis                 | 2.26      | -         |
+
 
 
 ##### ARIMA(0,0,1) Model Summary
@@ -324,6 +331,7 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 | **BIC**                  | 237.320         |
 | **HQIC**                 | 235.327         |
 
+
 ###### Coefficients
 
 | **Variable** | **Coef**  | **Std Err** | **z**     | **P>|z|** | **[0.025** | **0.975]**  |
@@ -331,6 +339,8 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 | const        | 82,400    | 281.658     | 292.560   | 0.000   | 81,800     | 83,000     |
 | ma.L1        | -0.9976   | 0.509       | -1.960    | 0.050   | -1.995     | ≈0         |
 | sigma²       | 9,616,000 | ≈0          | 7.31e+10  | 0.000   | 9,620,000  | 9,620,000  |
+
+
 
 ###### Residual Diagnostics
 
@@ -341,6 +351,7 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 | Heteroskedasticity (H)   | 0.33      | 0.31      |
 | Skewness                 | 0.01      | -         |
 | Kurtosis                 | 2.28      | -         |
+
 
 
 ##### ARIMA(1,0,1) Model Summary
@@ -355,6 +366,8 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 | **BIC**                  | 238.361         |
 | **HQIC**                 | 235.703         |
 
+
+
 ###### Coefficients
 
 | **Variable** | **Coef**  | **Std Err** | **z**     | **P>|z|** | **[0.025** | **0.975]**  |
@@ -363,6 +376,8 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 | ar.L1        | 0.3605    | 0.298       | 1.209     | 0.227   | -0.224     | 0.945      |
 | ma.L1        | -1.0000   | 0.656       | -1.524    | 0.128   | -2.286     | 0.286      |
 | sigma²       | 9,245,000 | ≈0          | 1.3e+14   | 0.000   | 9,250,000  | 9,250,000  |
+
+
 
 ###### Residual Diagnostics
 
