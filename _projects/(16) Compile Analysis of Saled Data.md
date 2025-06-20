@@ -24,7 +24,7 @@ this is the Ads Data result of the generated
     | Facebook_Camp2| Facebook | 2024-12-31 | 3198        | 200    | 248.76 | 200   | 1.24 | 128         |
     | Facebook_Camp3| Facebook | 2024-12-31 | 5679        | 291    | 440.48 | 291   | 1.51 | 186         |
     
-    </small>
+</small>
 
 
 this is the Leads Data result of the generated
