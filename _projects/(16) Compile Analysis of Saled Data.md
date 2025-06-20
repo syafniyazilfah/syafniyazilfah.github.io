@@ -266,6 +266,7 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 
 ###### Coefficients
 
+
 | **Variable** | **Coef**  | **Std Err** | **z**    | **P>|z|** | **[0.025** | **0.975]**  |
 |--------------|-----------|-------------|----------|---------|------------|------------|
 | const        | 82,150    | 1360.369    | 60.392   | 0.000   | 79,500     | 84,800     |
@@ -274,6 +275,7 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 
 
 ###### Residual Diagnostics
+
 
 | **Test**                 | **Value** | **Prob.** |
 |--------------------------|-----------|-----------|
@@ -297,7 +299,9 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 | **HQIC**                 | 236.835         |
 
 
+
 ###### Coefficients
+
 
 | **Variable** | **Coef**  | **Std Err** | **z**     | **P>|z|** | **[0.025** | **0.975]**  |
 |--------------|-----------|-------------|-----------|---------|------------|------------|
@@ -307,7 +311,9 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 
 
 
+
 ###### Residual Diagnostics
+
 
 | **Test**                 | **Value** | **Prob.** |
 |--------------------------|-----------|-----------|
@@ -321,6 +327,7 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 
 ##### ARIMA(0,0,1) Model Summary
 
+
 | **Metric**               | **Value**       |
 |--------------------------|-----------------|
 | **Dependent Variable**   | clicks          |
@@ -332,7 +339,9 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 | **HQIC**                 | 235.327         |
 
 
+
 ###### Coefficients
+
 
 | **Variable** | **Coef**  | **Std Err** | **z**     | **P>|z|** | **[0.025** | **0.975]**  |
 |--------------|-----------|-------------|-----------|---------|------------|------------|
@@ -343,6 +352,7 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 
 
 ###### Residual Diagnostics
+
 
 | **Test**                 | **Value** | **Prob.** |
 |--------------------------|-----------|-----------|
@@ -370,6 +380,7 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 
 ###### Coefficients
 
+
 | **Variable** | **Coef**  | **Std Err** | **z**     | **P>|z|** | **[0.025** | **0.975]**  |
 |--------------|-----------|-------------|-----------|---------|------------|------------|
 | const        | 82,340    | 405.650     | 202.994   | 0.000   | 81,500     | 83,100     |
@@ -380,6 +391,7 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 
 
 ###### Residual Diagnostics
+
 
 | **Test**                 | **Value** | **Prob.** |
 |--------------------------|-----------|-----------|
