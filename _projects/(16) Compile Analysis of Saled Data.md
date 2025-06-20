@@ -10,7 +10,6 @@ I was generated data of Ads Data, Leads Data, and Sales Data as below
 this is the Ads Data result of the generated
 
 <small>
-
 | campaign_id   | source   | date       | impressions | clicks | spend  | leads | cpl  | conversions |
 |---------------|----------|------------|-------------|--------|--------|-------|------|-------------|
 | Google_Camp1  | Google   | 2024-01-01 | 8270        | 485    | 955.64 | 485   | 1.97 | 310         |
@@ -23,14 +22,12 @@ this is the Ads Data result of the generated
 | Facebook_Camp1| Facebook | 2024-12-31 | 1477        | 122    | 569.51 | 122   | 4.67 | 78          |
 | Facebook_Camp2| Facebook | 2024-12-31 | 3198        | 200    | 248.76 | 200   | 1.24 | 128         |
 | Facebook_Camp3| Facebook | 2024-12-31 | 5679        | 291    | 440.48 | 291   | 1.51 | 186         |
-
 </small>
 
 
 this is the Leads Data result of the generated
 
 <small>
-
 | lead_date   | customer_id  | sku_interest | campaign_id    | source   |
 |-------------|--------------|--------------|----------------|----------|
 | 2024-01-01  | CUST0000001  | SKU008       | Google_Camp1   | Google   |
@@ -43,14 +40,12 @@ this is the Leads Data result of the generated
 | 2024-12-31  | CUST0985856  | SKU004       | Facebook_Camp3 | Facebook |
 | 2024-12-31  | CUST0985857  | SKU005       | Facebook_Camp3 | Facebook |
 | 2024-12-31  | CUST0985858  | SKU006       | Facebook_Camp3 | Facebook |
-
 </small>
 
 
 and this is the Sales Data
 
 <small>
-
 | transaction_id | purchase_date | customer_id  | sku    | price  | qty |
 |----------------|---------------|--------------|--------|--------|-----|
 | TXN0000001     | 2024-01-01    | CUST0000016  | SKU009 | 466.90 | 1   |
@@ -63,7 +58,6 @@ and this is the Sales Data
 | TXN1132879     | 2024-12-31    | CUST0985722  | SKU010 | 312.23 | 1   |
 | TXN1132880     | 2024-12-31    | CUST0985722  | SKU003 | 305.59 | 1   |
 | TXN1132881     | 2024-12-31    | CUST0985650  | SKU003 | 460.04 | 1   |
-
 </small>
 
 
@@ -298,6 +292,16 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 From the four models, ARIMA(0,0,0) is the best model based on having the lowest AIC and BIC values among all candidates. Although its log likelihood is slightly lower than other models, the difference is minimal and does not outweigh its advantage in AIC and BIC.
 
 The drawback of this model is its relatively large sigma² value, which indicates greater variance in the residuals, potentially leading to wider confidence intervals in forecasts. However, given the primary objective of minimizing AIC and BIC for model selection, ARIMA(0,0,0) is still considered the superior choice among the models evaluated.
+
+Based on the ARIMA modeling results, no significant trend component was detected in the dataset. This is likely due to the relatively short data period, consisting of only 12 monthly observations.
+
+For more accurate trend detection in time series analysis, it is generally recommended to use datasets with at least 24 or more observations to capture potential long-term trends or seasonal patterns.
+
+Alternatively, employing other models such as SARIMA or Prophet would be more suitable for identifying trend and seasonality components, especially in datasets expected to have recurring patterns or long-term directional movements.
+
+### **5. SARIMA**
+
+### **6. Prophet**
 
 
 ### **5. Behaviour Funnel**
