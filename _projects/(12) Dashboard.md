@@ -1,7 +1,7 @@
 ---
 name: Dashboard of Sinergi Group
 tools: [Looker Studio, Python, Spreadsheet]
-image: https://ik.imagekit.io/syafniya/Screenshot%202025-06-15%20142257.png?updatedAt=1749972391567
+image: https://ik.imagekit.io/syafniya/Screenshot%202025-06-21%20174854.png?updatedAt=1750503043062
 description: The data I used for this portfolio is dummy data.
 ---
 ### Visualizations of the dataset using Looker Studio, Spreadsheet and Python
@@ -11,7 +11,7 @@ For the visualization, I used Looker Studio (formerly known as Google Data Studi
 Before creating the visualizations, I cleaned the data (sourced from a spreadsheet) using Python. After obtaining the clean data, I imported it back into the spreadsheet to make it easier to read in Looker Studio (a Google product).
 
 <br />
-![](https://ik.imagekit.io/syafniya/Screenshot%202025-06-15%20142257.png?updatedAt=1749972391567)
+![](https://ik.imagekit.io/syafniya/Screenshot%202025-06-21%20174854.png?updatedAt=1750503043062)
 
 <br />
 This is a snippet of a sample data visualization from a company whose data I processed and made the visualization for.
@@ -22,7 +22,7 @@ Additionally, the ads cost worsened the situation, with spending exceeding the t
 
 <br />
 <br />
-![](https://ik.imagekit.io/syafniya/Screenshot%202025-06-15%20143009.png?updatedAt=1749972681036)
+![](https://ik.imagekit.io/syafniya/Screenshot%202025-06-21%20174915.png?updatedAt=1750503042899)
 
 <br />
 The comparison between the revenue generated and the expenses incurred to achieve that revenue appears favorable, as the expenses are not exceeding the revenue. However, for leads, the revenue-to-expense ratio is around 9:1, and for the marketplace, it’s approximately 10:1, which is quite challenging and less efficient. 
@@ -33,7 +33,7 @@ The repeat segment represents repeat purchases by customers (customers making ad
 
 <br />
 <br />
-![](https://ik.imagekit.io/syafniya/Screenshot%202025-06-15%20143030.png?updatedAt=1749972681270)
+![](https://ik.imagekit.io/syafniya/Screenshot%202025-06-22%20044615.png?updatedAt=1750542423959)
 
 <br />
 Here is a dashboard I created to visualize the marketing team’s performance in social media, using dummy data.
