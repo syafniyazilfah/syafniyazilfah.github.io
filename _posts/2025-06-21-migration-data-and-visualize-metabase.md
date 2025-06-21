@@ -13,7 +13,9 @@ At my company, we already had a database server where the warehouse team inputs 
 4. Most importantly: the product data was combined in a single column.
 
 For example, one transaction was recorded as a single row, and the product column contained a mix like:
+
 "SKU-A 2 SKU-B 1 SKU-C 5"
+
 
 This structure made it impossible to analyze product-level sales properly.
 
