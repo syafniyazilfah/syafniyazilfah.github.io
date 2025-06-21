@@ -1,19 +1,19 @@
 - name: Tableau
-  percentage: 40
+  percentage: 60
   color: success
   
 - name: Metabase
-  percentage: 40
+  percentage: 65
   color: info
 
 - name: Looker Studio
-  percentage: 70
+  percentage: 85
   color: blue
 
 - name: Power BI
-  percentage: 35
+  percentage: 60
   color: warning
 
 - name: Clip Studio Paint
-  percentage: 40
+  percentage: 50
   color: secondary
