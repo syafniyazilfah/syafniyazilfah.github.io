@@ -1,5 +1,5 @@
 ---
-title: New Era of Reading Data with Visualization in small business
+title: Migration Data to Metabase
 tags: [Cleaning Data, Migration Data, Metabase]
 style: info
 color: 
