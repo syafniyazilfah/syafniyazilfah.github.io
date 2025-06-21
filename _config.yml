@@ -84,6 +84,11 @@ defaults:
       type: "certificate"                                  # For Documentation Only
     values:                                             # For Documentation Only
       layout: "certificate"                                 # For Documentation Only
+  - scope:                                              # For Documentation Only
+      path: ""                                          # For Documentation Only
+      type: "testimonial"                                  # For Documentation Only
+    values:                                             # For Documentation Only
+      layout: "testimonial"  
   - scope:
       path: ""
       type: "posts"
