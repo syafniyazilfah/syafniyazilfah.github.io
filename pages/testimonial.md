@@ -15,9 +15,7 @@ weight: 3
         {% endif %}
         <div class="card-body">
           <h5 id="{{ project.name | slugify }}-name" class="card-title">{{ project.name }}</h5>
-          <p id="{{ project.name | slugify }}-desc" class="card-text" style="font-style: italic; font-weight: bold; font-size: 0.9rem; font-family: 'Helvetica', 'Arial', sans-serif;">
-  {{ project.jabatan }}
-</p>
+          <p id="{{ project.name | slugify }}-desc" class="card-text">{{ project.jabatan }}</p>
           <p id="{{ project.name | slugify }}-testimonial" class="card-text" style="font-size: 0.85rem">&ldquo;{{ project.testimonial | newline_to_br }}&rdquo;</p>
         </div>
       </div>
