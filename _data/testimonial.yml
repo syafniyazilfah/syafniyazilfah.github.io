@@ -1,7 +1,8 @@
 - name: Mohamad Viekry
   jabatan: Reseller Management Lead, Sinergi Group
   image: https://ik.imagekit.io/syafniya/DSC00385.jpg?updatedAt=1750542828159
-  testimonial : I have greatly benefited from Zilfah's presence, especially in the development of dashboards that make sales data analysis easier, whether through Looker Studio, spreadsheets, or ad hoc reports. This has been very helpful for me in the process of monitoring and tracking sales, as well as supporting faster and more accurate decision-making.
+  testimonial : |
+                I have greatly benefited from Zilfah's presence, especially in the development of dashboards that make sales data analysis easier, whether through Looker Studio, spreadsheets, or ad hoc reports. This has been very helpful for me in the process of monitoring and tracking sales, as well as supporting faster and more accurate decision-making.
                 
                 In addition to having a good understanding of the projects assigned and delivering outputs according to needs, Zilfah also takes the initiative to contribute valuable ideas. The collaborative process, carried out through two-way discussions, has made the teamwork even more effective.
 
@@ -18,5 +19,7 @@
 - name: Dena Cahya
   jabatan: Warehouse Lead, Sinergi Group
   image: https://ik.imagekit.io/syafniya/DSC00260.jpg?updatedAt=1750542827853
-  testimonial : I have been greatly helped by having Kak Zilfah as a Data Analyst in supporting the warehouse, especially the admin team. One of the most impactful contributions was when Kak Zilfah created a tool using Google Colab to convert receipt data from PDF format into ready-to-use Excel files. This tool has been a huge help for the warehouse admin team because we no longer have to copy and paste the data manually one by one — even though the data can reach up to 4,000 addresses per day across all business units. This solution has truly made our workflow much more efficient.
+  testimonial : |
+                I have been greatly helped by having Kak Zilfah as a Data Analyst in supporting the warehouse, especially the admin team. One of the most impactful contributions was when Kak Zilfah created a tool using Google Colab to convert receipt data from PDF format into ready-to-use Excel files. This tool has been a huge help for the warehouse admin team because we no longer have to copy and paste the data manually one by one — even though the data can reach up to 4,000 addresses per day across all business units. This solution has truly made our workflow much more efficient.
+                
                 What I appreciate the most is that Kak Zilfah doesn’t just focus on the technical side but also genuinely cares about helping her colleagues. She often asks directly, 'Is there anything I can help you with?'
