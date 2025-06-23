@@ -22,7 +22,7 @@ weight: 3
               <i class="fab fa-linkedin-in"></i>
             </a><br>
           {% endif %}
-          <p id="{{ project.name | slugify }}-testimonial" class="card-text" style="font-size: 0.8rem; margin-top: 0.5rem;">&ldquo;{{ project.testimonial | newline_to_br }}&rdquo;</p>
+          <p id="{{ project.name | slugify }}-testimonial" class="card-text" style="font-size: 0.84rem; margin-top: 0.5rem;">&ldquo;{{ project.testimonial | newline_to_br }}&rdquo;</p>
         </div>
       </div>
     </div>
