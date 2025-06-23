@@ -18,11 +18,11 @@ weight: 3
           <p id="{{ project.name | slugify }}-desc" class="card-text">{{ project.jabatan }}</p>
           <!-- Icon LinkedIn kalau linkedin ada -->
           {% if project.linkedin %}
-            <a href="https://www.linkedin.com/in/{{ project.linkedin }}" target="_blank" rel="noopener noreferrer" style="color: #007bb5; margin-right: 5px;">
+            <a href="https://www.linkedin.com/in/{{ project.linkedin }}" target="_blank" rel="noopener noreferrer" style="color: #007bb5; margin-right: 7px;">
               <i class="fab fa-linkedin-in"></i>
-            </a>
+            </a><br>
           {% endif %}
-          <p id="{{ project.name | slugify }}-testimonial" class="card-text" style="font-size: 0.85rem">&ldquo;{{ project.testimonial | newline_to_br }}&rdquo;</p>
+          <p id="{{ project.name | slugify }}-testimonial" class="card-text" style="font-size: 0.8rem">&ldquo;{{ project.testimonial | newline_to_br }}&rdquo;</p>
         </div>
       </div>
     </div>
