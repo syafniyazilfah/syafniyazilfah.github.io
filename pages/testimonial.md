@@ -1,3 +1,10 @@
+---
+layout: default
+title: Testimonial
+permalink: /testimonial/
+weight: 3
+---
+
 <div class="card-columns m-3 mt-5">
 
   {% for project in site.data.testimonial %}
