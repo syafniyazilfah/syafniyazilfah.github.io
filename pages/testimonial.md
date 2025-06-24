@@ -15,18 +15,18 @@ weight: 3
   }
 
   .jabatan-badge {
-  display: inline-block;
-  font-size: 0.85rem;
-  padding: 2px 8px;
-  border-radius: 4px;
-  color: #fff;           /* teks putih biar kontras */
-  margin-left: 6px;
-}
-
-.badge-leader { background: #007bb5; }        /* Biru */
-.badge-manager { background: #28a745; }       /* Hijau */
-.badge-senior-staff { background: #343a40; }  /* Hitam */
-.badge-staff { background: #6c757d; }         /* Abu-abu gelap */
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #fff;
+    margin-left: 6px;
+  }
+  .badge-leader { background: #007bb5; }        /* Biru */
+  .badge-manager { background: #28a745; }       /* Hijau */
+  .badge-senior-staff { background: #343a40; }  /* Hitam */
+  .badge-staff { background: #6c757d; }         /* Abu-abu gelap */
+</style>
 
 <div class="card-columns m-3 mt-5">
 
@@ -52,7 +52,7 @@ weight: 3
             {% endif %}
           </h5>
           {% if project.jabatan %}
-            <p id="{{ project.name | slugify }}-desc" class="card-text" style="font-size: 0.78rem; color: #555; margin-top: 0.25rem;">
+            <p id="{{ project.name | slugify }}-desc" class="card-text" style="font-size: 0.87rem; margin-top: 0.25rem;">
               {{ project.jabatan }}
             </p>
           {% endif %}
