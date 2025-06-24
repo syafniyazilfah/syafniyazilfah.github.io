@@ -15,17 +15,33 @@ weight: 3
   }
 
   .jabatan-badge {
-    display: inline-block;
-    font-size: 0.75rem;
-    padding: 2px 8px;
-    border-radius: 4px;
-    margin-left: 6px;
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: #fff;           /* teks putih biar kontras */
+  margin-left: 6px;
+}
+
+.badge-leader { background: #007bb5; }        /* Biru */
+.badge-manager { background: #28a745; }       /* Hijau */
+.badge-senior-staff { background: #343a40; }  /* Hitam */
+.badge-staff { background: #6c757d; }         /* Abu-abu gelap */
+
+p.card-text {
+  color: #555;   /* warna teks jabatan default di light mode */
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .badge-staff {
+    background: #555;
+    color: #fff;
   }
-  .badge-leader { background: #007bb5; }        /* Biru */
-  .badge-manager { background: #28a745; }       /* Hijau */
-  .badge-senior-staff { background: #343a40; }  /* Hitam */
-  .badge-staff { background: #6c757d; }         /* Abu-abu gelap */
-</style>
+  p.card-text {
+    color: #eee;   /* teks jabatan jadi terang dan mudah dibaca */
+  }
+}
 
 <div class="card-columns m-3 mt-5">
 
