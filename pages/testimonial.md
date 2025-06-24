@@ -28,21 +28,6 @@ weight: 3
 .badge-senior-staff { background: #343a40; }  /* Hitam */
 .badge-staff { background: #6c757d; }         /* Abu-abu gelap */
 
-p.card-text {
-  color: #555;   /* warna teks jabatan default di light mode */
-}
-
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-  .badge-staff {
-    background: #555;
-    color: #fff;
-  }
-  p.card-text {
-    color: #eee;   /* teks jabatan jadi terang dan mudah dibaca */
-  }
-}
-
 <div class="card-columns m-3 mt-5">
 
   {% for project in site.data.testimonial %}
