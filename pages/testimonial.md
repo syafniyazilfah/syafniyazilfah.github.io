@@ -19,7 +19,6 @@ weight: 3
     font-size: 0.75rem;
     padding: 2px 8px;
     border-radius: 4px;
-    color: #fff;
     margin-left: 6px;
   }
   .badge-leader { background: #007bb5; }        /* Biru */
