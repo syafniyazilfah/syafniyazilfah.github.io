@@ -197,10 +197,12 @@ This is important to determine whether the data is stationary or not. In my case
 from statsmodels.tsa.arima.model import ARIMA
 from statsmodels.tsa.stattools import adfuller
 
-df_ads['lead_month'] = pd.to_datetime(df_ads['date']).dt.to_period('M')
-monthly_leads = df_ads.groupby('lead_month')['clicks'].sum()
+df_ads['date'] = pd.to_datetime(df_ads['date'])
+daily_clicks = df_ads.groupby('date')['clicks'].sum().asfreq('D') 
 
-result = adfuller(monthly_leads)
+daily_clicks = daily_clicks.fillna(0)
+
+result = adfuller(daily_clicks)
 print('ADF Statistic:', result[0])
 print('p-value:', result[1])
 
@@ -209,8 +211,8 @@ print('p-value:', result[1])
 The results of the ADF test statistic and p-value are as follows:
 
 ````
-ADF Statistic: -3.383983092868024
-p-value: 0.011517156979879782
+ADF Statistic: -12.054420491695716
+p-value: 2.553072882245295e-22
 ````
 
 Since the p-value is less than 0.05, we can conclude that the data is already stationary. Therefore, no data transformation or differencing is needed.
@@ -223,10 +225,10 @@ import matplotlib.pyplot as plt
 
 fig, axes = plt.subplots(1, 2, figsize=(12, 5))
 
-plot_acf(monthly_leads, ax=axes[0])
+plot_acf(daily_clicks, ax=axes[0])
 axes[0].set_title('ACF')
 
-plot_pacf(monthly_leads, ax=axes[1])
+plot_pacf(daily_clicks, ax=axes[1])
 axes[1].set_title('PACF')
 
 plt.show()
@@ -235,7 +237,7 @@ plt.show()
 
 The code produced the following ACF and PACF plots:
 
-![](https://ik.imagekit.io/syafniya/ACF%20PACF.png?updatedAt=1750377911596)
+![](https://ik.imagekit.io/syafniya/ACF%20PACF%20daily.png?updatedAt=1750905211183)
 
 From the plots, it can be seen that both the ACF and PACF show a sharp decline after lag 0. Therefore, the possible ARIMA models could be ARIMA(0,0,0), ARIMA(1,0,0), ARIMA(0,0,1), or ARIMA(1,0,1).
 
@@ -248,11 +250,11 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 | **Metric**             | **ARIMA(0,0,0)** | **ARIMA(1,0,0)** | **ARIMA(0,0,1)** | **ARIMA(1,0,1)** |
 | ---------------------- | ---------------- | ---------------- | ---------------- | ---------------- |
 | **Dependent Variable** | clicks           | clicks           | clicks           | clicks           |
-| **Observations**       | 12               | 12               | 12               | 12               |
-| **Log Likelihood**     | -115.750         | -115.687         | -114.933         | -114.211         |
-| **AIC**                | 235.501          | 237.374          | 235.865          | 236.421          |
-| **BIC**                | 236.471          | 238.829          | 237.320          | 238.361          |
-| **HQIC**               | 235.142          | 236.835          | 235.327          | 235.703          |
+| **Observations**       | 366              | 366              | 366              | 366              |
+| **Log Likelihood**     | -2894.813        | -2894.794        | -2894.797        | -2894.340        |
+| **AIC**                | 5793.627         | 5795.589         | 5795.595         | 5796.680         |
+| **BIC**                | 5801.432         | 5807.297         | 5807.303         | 5812.290         |
+| **HQIC**               | 5796.729         | 5800.241         | 5800.247         | 5802.883         |
 
 ##### Coefficients
 
@@ -268,22 +270,22 @@ This involves evaluating the models based on statistical metrics such as AIC, BI
 | **Variable** | **ARIMA(0,0,0)** | **ARIMA(1,0,0)** | **ARIMA(0,0,1)** | **ARIMA(1,0,1)** |
 | ------------ | ---------------- | ---------------- | ---------------- | ---------------- |
 | const        | 0.000            | 0.000            | 0.000            | 0.000            |
-| ar.L1        | -                | 0.676            | -                | 0.227            |
-| ma.L1        | -                | -                | 0.050            | 0.128            |
-| sigma²       | 0.104            | 0.000            | 0.000            | 0.000            |
+| ar.L1        | -                | 0.852            | -                | 0.193            |
+| ma.L1        | -                | -                | 0.876            | 0.241            |
+| sigma²       | 0.000            | 0.000            | 0.000            | 0.000            |
 
 ##### Residual Diagnostics
 
 | **Test**               | **ARIMA(0,0,0)** | **ARIMA(1,0,0)** | **ARIMA(0,0,1)** | **ARIMA(1,0,1)** |
 | ---------------------- | ---------------- | ---------------- | ---------------- | ---------------- |
-| Ljung-Box (Q)          | 0.20             | 0.04             | 1.17             | 0.09             |
-| Prob(Q) (p-value)      | 0.66             | 0.84             | 0.28             | 0.77             |
-| Jarque-Bera (JB)       | 1.16             | 1.12             | 0.26             | 0.71             |
-| Prob(JB) (p-value)     | 0.56             | 0.57             | 0.88             | 0.70             |
-| Heteroskedasticity (H) | 0.25             | 0.22             | 0.33             | 0.27             |
-| Prob(H)                | 0.21             | 0.17             | 0.31             | 0.23             |
-| Skewness               | 0.70             | 0.65             | 0.01             | 0.14             |
-| Kurtosis               | 2.39             | 2.26             | 2.28             | 1.84             |
+| Ljung-Box (Q)          | 0.04             | 0.00             | 0.00             | 0.32             |
+| Prob(Q) (p-value)      | 0.85             | 0.99             | 0.99             | 0.57             |
+| Jarque-Bera (JB)       | 13.22            | 13.22            | 13.22            | 13.78            |
+| Prob(JB) (p-value)     | 0.00             | 0.00             | 0.00             | 0.00             |
+| Heteroskedasticity (H) | 0.92             | 0.92             | 0.92             | 0.93             |
+| Prob(H)                | 0.63             | 0.64             | 0.64             | 0.69             |
+| Skewness               | 0.46             | 0.46             | 0.46             | 0.47             |
+| Kurtosis               | 3.11             | 3.11             | 3.11             | 3.11             |
 
 
 
@@ -293,7 +295,55 @@ The drawback of this model is its relatively large sigma² value, which indicate
 
 Based on the ARIMA modeling results, no significant trend component was detected in the dataset. This is likely due to the relatively short data period, consisting of only 12 monthly observations.
 
-For more accurate trend detection in time series analysis, it is generally recommended to use datasets with at least 24 or more observations to capture potential long-term trends or seasonal patterns.
+Forecast decided using ARIMA (0,0,0)
+
+````
+model = ARIMA(daily_clicks, order=(0, 0, 0)) 
+model_fit = model.fit()
+
+forecast = model_fit.forecast(steps=9)
+
+````
+
+The result of forecast by using Model ARIMA (0,0,0)
+
+| Date       | Predicted Mean |
+|------------|----------------|
+| 2025-01-01 | 2693.601056     |
+| 2025-01-02 | 2693.601056     |
+| 2025-01-03 | 2693.601056     |
+| 2025-01-04 | 2693.601056     |
+| 2025-01-05 | 2693.601056     |
+| 2025-01-06 | 2693.601056     |
+| 2025-01-07 | 2693.601056     |
+| 2025-01-08 | 2693.601056     |
+| 2025-01-09 | 2693.601056     |
+
+
+
+````
+forecast_index = pd.date_range(start=daily_clicks.index[-1] + pd.Timedelta(days=1), periods=9, freq='D')
+
+plt.figure(figsize=(12, 5))
+plt.plot(daily_clicks.index, daily_clicks, label='Actual')
+plt.plot(forecast_index, forecast, label='Forecast', marker='o', linestyle='--', color='orange')
+plt.title('Daily Clicks Forecast')
+plt.xlabel('Date')
+plt.ylabel('Clicks')
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+
+````
+
+The result of plot with actual data and predicted by using Model ARIMA (0,0,0)
+
+![](https://ik.imagekit.io/syafniya/forecast%20ARIMA%20000.png?updatedAt=1750906154608)
+
+
+<br/> For more accurate trend detection in time series analysis, it is generally recommended to use datasets with at least 24 or more observations to capture potential long-term trends or seasonal patterns.
 
 Alternatively, employing other models such as SARIMA or Prophet would be more suitable for identifying trend and seasonality components, especially in datasets expected to have recurring patterns or long-term directional movements.
 
