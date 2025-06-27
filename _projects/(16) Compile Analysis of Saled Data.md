@@ -347,11 +347,6 @@ The result of plot with actual data and predicted by using Model ARIMA (0,0,0)
 
 Alternatively, employing other models such as SARIMA or Prophet would be more suitable for identifying trend and seasonality components, especially in datasets expected to have recurring patterns or long-term directional movements.
 
-### **5. SARIMA**
-
-### **6. Prophet**
-
-
 ### **5. Behaviour Funnel**
 
 I have data for behaviour funnel, using impressions, clicks, leads, and transaction
