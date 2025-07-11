@@ -7,6 +7,8 @@ weight: 3
 
 # **About Me**
 
+{% include elements/video.html id="BF3jnCqRzck" %}
+
 Hi I am **{{ site.author.name }}** :wave:,<br>
 I’m a Data Analyst with a strong interest in big data and business intelligence. I focus on applying statistical methods to transform data into actionable insights that drive smarter business decisions.
 
@@ -15,8 +17,6 @@ I primarily work with SQL, Python, Looker Studio, Power BI, and Metabase for dat
 With a combination of analytical skills and creative thinking, I’m passionate about translating complex data into clear, impactful visuals that help businesses grow.
 
 {% include elements/button.html link="https://github.com/syafniyazilfah/syafniyazilfah.github.io/blob/b22e57a5fd8c3a7a05991cbd8e1759e7fe269f22/assets/CV%20-%20Syafniya%20Zilfah%20A.pdf" text="Download CV" %}
-
-{% include elements/video.html id="BF3jnCqRzck" %}
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
