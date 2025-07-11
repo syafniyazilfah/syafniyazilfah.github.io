@@ -16,6 +16,8 @@ With a combination of analytical skills and creative thinking, I’m passionate 
 
 {% include elements/button.html link="https://github.com/syafniyazilfah/syafniyazilfah.github.io/blob/b22e57a5fd8c3a7a05991cbd8e1759e7fe269f22/assets/CV%20-%20Syafniya%20Zilfah%20A.pdf" text="Download CV" %}
 
+{% include elements/video.html id="BF3jnCqRzck" %}
+
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
