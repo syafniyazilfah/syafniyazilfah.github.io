@@ -16,7 +16,7 @@ I primarily work with SQL, Python, Looker Studio, Power BI, and Metabase for dat
 
 With a combination of analytical skills and creative thinking, I’m passionate about translating complex data into clear, impactful visuals that help businesses grow.
 
-{% include elements/button.html link="https://github.com/syafniyazilfah/syafniyazilfah.github.io/blob/b1282f21d243639955991e38060f58b09bb430f8/assets/CV%20-%20Syafniya%20Zilfah%20Aniesiy%20(1).pdf" text="Download CV" %}
+{% include elements/button.html link="https://docs.google.com/document/d/1rsxR0HdWK9R83XO0w0Z541qFv91vf_M-wlRfQ1L_uks/export?format=pdf" text="Download CV" %}
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
