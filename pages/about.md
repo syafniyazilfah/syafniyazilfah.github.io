@@ -7,7 +7,7 @@ weight: 3
 
 # **About Me**
 
-{% include elements/video.html id="BF3jnCqRzck" %}
+<!-- {% include elements/video.html id="BF3jnCqRzck" %} -->
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
 I’m a Data Analyst with a strong interest in big data and business intelligence. I focus on applying statistical methods to transform data into actionable insights that drive smarter business decisions.
